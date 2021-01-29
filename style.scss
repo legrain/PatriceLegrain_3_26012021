@@ -11,6 +11,11 @@ $tertiaire: #99E2D0;
 	width: 100%;
 }
 
+.cont-page
+{
+	background-color: rgb(211, 205, 205);
+}
+
 .formulaire {
 	background-color: rgb(177, 170, 170);
 	padding: 15px 0 15px 0;
@@ -187,18 +192,28 @@ i.fas.fa-chevron-left {
     width: 100%;
 }
 
-.contenu-page
-{
-	background-color: rgb(211, 205, 205);
-}
-
 .menu
 {
 	background-color: white;
+	margin: 10px;
+	border-radius: 20px;
+	padding-left: 5px;
 }
 
 img
 {
 	height: 220px;
+}
+
+.intitulé p
+{
+	display: flex;
+	font-size: 1em;
+	width: 80%;
+}
+
+.prix
+{
+	width: 10%;
 }
  
