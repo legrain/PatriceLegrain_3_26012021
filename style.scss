@@ -205,11 +205,13 @@ img
 	height: 220px;
 }
 
-.intitulé p
-{
-	display: flex;
-	font-size: 1em;
-	width: 80%;
+.intitulé {
+	p
+		{
+			display: flex;
+			font-size: 1em;
+			width: 80%;
+		}
 }
 
 .prix
