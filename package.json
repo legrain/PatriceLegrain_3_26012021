@@ -1,11 +1,15 @@
 {
-  "name": "legrain",
+  "name": "p3_legrainpatrice_26012021",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {"bootstrap": "4.2.1",},
+  "devDependencies": {},
   "scripts": {
-    "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "sass":"sass --watch style.scss:style.css --style expanded "
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/legrain/PatriceLegrain_3_26012021.git"
@@ -16,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/legrain/PatriceLegrain_3_26012021/issues"
   },
-  "homepage": "https://github.com/legrain/PatriceLegrain_3_26012021#readme",
-  "keywords": [],
-  "dependencies": {},
-  "devDependencies": {}
+  "homepage": "https://github.com/legrain/PatriceLegrain_3_26012021#readme"
 }
