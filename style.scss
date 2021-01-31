@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 
@@ -8,12 +8,20 @@ $tertiaire: #99E2D0;
 
 p
 {
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, .logo
+h1, .logo
 {
 	font-family: 'Shrikhand', cursive;
+}
+
+h1
+{
+	display: -webkit-inline-box;
+	font-size: 1.4em;
+	width: 80%;
+	padding-left: 20px;
 }
 
 
@@ -29,7 +37,11 @@ h1, h2, h3, .logo
 
 .cont-page
 {
-	background-color: rgb(211, 205, 205);
+	background-color: rgb(236, 233, 233);
+	margin-top: -40px;
+	border-radius: 30px 30px 0 0;
+	padding-top: 20px;
+	position: relative;
 }
 
 .formulaire {
@@ -58,7 +70,7 @@ h1, h2, h3, .logo
 }
 
 .button-explorer a {
-		background-color: #FF79DA;
+		background-color: $secondaire;
 		padding: 10px;
 		border-radius: 30px;
 		text-decoration: none;
@@ -99,27 +111,24 @@ i.fas.fa-ellipsis-v {
 	padding-right: 0;
 }
 
+@mixin form {
+
+		padding: 20px;
+		background-color: rgb(211, 205, 205);
+		width: 85%;
+		border-radius: 20px;
+		margin-bottom: 10px;
+}
+
 .liste {
 	.phone {
-		padding: 20px;
-		background-color: rgb(211, 205, 205);
-		width: 85%;
-		border-radius: 20px;
-		margin-bottom: 10px;
+		@include form;
 	}
 	.bars {
-		padding: 20px;
-		background-color: rgb(211, 205, 205);
-		width: 85%;
-		border-radius: 20px;
-		margin-bottom: 10px;
+		@include form;
 	}
 	.store {
-		padding: 20px;
-		background-color: rgb(211, 205, 205);
-		width: 85%;
-		border-radius: 20px;
-		margin-bottom: 10px;
+		@include form;
 	}
 }
 
@@ -140,20 +149,22 @@ i.fas.fa-ellipsis-v {
 
 .photo-resto {
 	img {
-		width: 100%;
-		height: 250px;
+		
 		border-radius: 15px 15px 0 0;
+		height: 200px;
 	}
+	
 	display: inline-block;
 	position: relative;
 	
 	p {
 		margin: 0;
 	}
+	width: 100%;
 }
 
 .nouveau {
-		background: #99E2D0;
+		background: $tertiaire;
 		color: #088f6d;
 		height: 30px;
 		padding: 5px;
@@ -167,16 +178,18 @@ i.fas.fa-ellipsis-v {
 h3 {
 	display: -webkit-inline-box;
 	width: 90%;
+	font-size: 1em;
+	margin-bottom: 0;
 }
 
-i.far.fa-heart {
-	&:hover {
-		filter: pink;
-	}
+.photo-emballage
+{
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
 footer {
-	margin-top: 30px;
+	margin: 0;
 	background-color: black;
 	li {
 		a {
@@ -199,11 +212,17 @@ footer {
 	}
 }
 
-i.fas.fa-chevron-left {
+.fas.fa-chevron-left {
 	width: 10%;
 	display: flex;
 	margin: 0;
 	padding: 0;
+    z-index: 1;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    line-height: 2;
+    color: black;
 }
 
 .logo-emballage {
@@ -212,8 +231,13 @@ i.fas.fa-chevron-left {
 
 .logo-image {
 	img {
-		width: 90%;
+		width: 70%;
 	}
+}
+
+.gourmand-titre
+{
+	margin-left: 15px;
 }
 
 .photo-gout {
@@ -224,7 +248,9 @@ i.fas.fa-chevron-left {
 
 .photo-gout img 
 {
-    width: 100%;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
 }
 
 .menu
@@ -240,22 +266,27 @@ img
 	width: 100%;
 }
 
-.photo-resto img {
-    height: 220px;
-}
-
 .piment 
 {
-	grid-row: 1;
-	display: flex;
-	font-size: 1em;
-	width: 70%;
+    display: -webkit-inline-box;
+	width: 85%;
+	font-size: 0.8em;
+    margin-top: 0;
 }
 
-
-.prix
+.boutton-commander 
 {
-	width: 10%;
+    margin: 20px;
+}
+
+.bouton a
+{
+	background-color: #FF79DA;
+	padding: 10px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: white;
+	box-shadow: 1px 3px #918d8d;
 }
 
 #loader {
