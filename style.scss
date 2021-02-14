@@ -5,6 +5,8 @@
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
+$gris-fonce: #eaeaea;
+$gris-claire: #f6f6f6;
 
 p
 {
@@ -33,7 +35,7 @@ h1
 	font-size: 1.4em;
 	width: 80%;
 	padding-left: 20px;
-	color: #0000;
+	color: #101010;
 }
 
 
@@ -57,13 +59,14 @@ h1
 }
 
 .formulaire {
-	background-color: rgb(177, 170, 170);
+	background-color: $gris-fonce;
+	border-top: 2px solid #d3d3d3;
 	padding: 15px 0 15px 0;
 	text-align: center;
 }
 
 .text {
-	background-color: rgb(211, 205, 205);
+	background-color: $gris-claire;
 	text-align: center;
 	h2 {
 		margin: 0;
@@ -75,14 +78,14 @@ h1
 }
 
 .button {
-	background-color: rgb(211, 205, 205);
+	background-color: #f6f6f6;
 	padding-top: 20px;
 	padding-bottom: 30px;
 	text-align: center;
 }
 
 .button-explorer a {
-		background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+		background: linear-gradient(to bottom right,$secondaire,$primaire);
 		padding: 10px;
 		border-radius: 30px;
 		text-decoration: none;
@@ -126,10 +129,21 @@ i.fas.fa-ellipsis-v {
 @mixin form {
 
 		padding: 20px;
-		background-color: rgb(211, 205, 205);
+		background-color: $gris-claire;
 		width: 85%;
 		border-radius: 20px;
 		margin-bottom: 10px;
+}
+
+span
+{
+	border: 6px solid #9356DC;
+    border-radius: 50%;
+    background: #9356DC;
+    color: white;
+	font-size: 0.8em;
+    margin-left: -60px;
+    margin-right: 50px;
 }
 
 .liste {
@@ -145,7 +159,7 @@ i.fas.fa-ellipsis-v {
 }
 
 .restaurant {
-	background-color: rgb(211, 205, 205);
+	background-color: $gris-claire;
 	padding-bottom: 10px;
 }
 .resto {
@@ -202,7 +216,7 @@ h3 {
 
 footer {
 	margin: 0;
-	background-color: black;
+	background-color: #353535;
 	li {
 		a {
 			color: white;
@@ -224,15 +238,15 @@ footer {
 	}
 }
 
-.fas.fa-chevron-left {
+.fa-arrow-left{
 	width: 10%;
 	display: flex;
 	margin: 0;
 	padding: 0;
     z-index: 1;
     position: absolute;
-    top: 1%;
-    left: 5%;
+    top: 3%;
+    left: 2%;
     line-height: 2;
     color: black;
 }
@@ -243,7 +257,7 @@ footer {
 
 .logo-image {
 	img {
-		width: 70%;
+		width: 40%;
 	}
 }
 
@@ -289,11 +303,13 @@ img
 .boutton-commander 
 {
     padding-bottom: 20px;
+	text-align: center;
 }
 
 .bouton a
 {
-	background-color: #FF79DA;
+	background: linear-gradient(to bottom right,$secondaire,$primaire);
+	justify-content: center;
 	padding: 10px;
 	border-radius: 30px;
 	text-decoration: none;
