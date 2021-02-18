@@ -3,7 +3,7 @@
 
 
 $primaire: #9356DC;
-$secondaire: #FF79DA;
+$secondaire: rgb(255, 121, 218);
 $tertiaire: #99E2D0;
 $gris-fonce: #eaeaea;
 $gris-claire: #f6f6f6;
@@ -12,6 +12,7 @@ p
 {
 	font-family: 'Roboto', sans-serif;
 	color: #9f9f9f;
+	position:initial ;
 }
 
 h1, .logo
@@ -100,7 +101,7 @@ h1
     padding:.2em;
 }
 .fa-heart::before {
-    content: "\f004";
+    content: "\002665";
     font-weight: bold;
     transition: color 1s ease-out;
 }
@@ -155,6 +156,12 @@ span
 	}
 	.store {
 		@include form;
+	}
+	& li:hover{
+		background-color: rgba(147, 86, 220,0.3);
+	}
+	& li i.fas.fa:hover{
+		color:#9356DC;
 	}
 }
 
@@ -235,6 +242,7 @@ footer {
 		filter: invert(6);
 		width: 50%;
 		padding-left: 40px;
+		padding-top: 20px;
 	}
 }
 
@@ -287,6 +295,8 @@ footer {
 	padding-left: 5px;
 }
 
+
+
 img
 {
 	width: 100%;
@@ -299,6 +309,7 @@ img
 	font-size: 0.8em;
     margin-top: 0;
 }
+
 
 .boutton-commander 
 {
@@ -331,7 +342,7 @@ img
       border-top: 20px solid #1177FF;
       border-radius: 50%;
 	  animation: spin 1s linear infinite;
-	  	  
+	  	  cursor: pointer;
 }
 
 @keyframes spin {
@@ -339,6 +350,22 @@ img
       100% { transform: rotate(360deg);}
 }
 
+.menu
+{
+	 
+	animation: remontexte 3s;
+}
+
+@keyframes remontexte{
+	from{
+			transform: translateY(40px);
+			opacity: 0;
+	}
+	to{
+			transform: translateY(0);
+			opacity: 2;
+	}
+}
 
 
 
