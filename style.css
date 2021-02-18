@@ -79,6 +79,46 @@ h1 {
   color: red;
   cursor: pointer; }
 
+.menu-contenu {
+  width: 100%; }
+
+article {
+  display: flex;
+  justify-content: space-between; }
+
+.piment {
+  margin-top: 0; }
+
+.price {
+  align-self: flex-end;
+  margin-right: 10px; }
+
+.check {
+  display: flex;
+  background-color: #99E2D0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 0 20px 20px 0; }
+
+article:hover .check {
+  animation: rotation 2s forwards; }
+
+@keyframes rotation {
+  from {
+    width: 0; }
+  to {
+    width: 100px; } }
+span {
+  align-self: center;
+  margin-left: 30%; }
+
+i.fas.fa-check {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  color: #99E2D0; }
+
 .liste-ul ul {
   list-style: none;
   padding-left: 0;
@@ -88,15 +128,6 @@ h1 {
 
 i.fas.fa-ellipsis-v {
   padding-right: 0; }
-
-span {
-  border: 6px solid #9356DC;
-  border-radius: 50%;
-  background: #9356DC;
-  color: white;
-  font-size: 0.8em;
-  margin-left: -60px;
-  margin-right: 50px; }
 
 .liste .phone {
   padding: 20px;
@@ -157,7 +188,6 @@ span {
 
 h3 {
   display: -webkit-inline-box;
-  width: 90%;
   font-size: 1em;
   margin-bottom: 0; }
 
@@ -220,12 +250,6 @@ footer {
 
 img {
   width: 100%; }
-
-.piment {
-  display: -webkit-inline-box;
-  width: 85%;
-  font-size: 0.8em;
-  margin-top: 0; }
 
 .boutton-commander {
   padding-bottom: 20px;
