@@ -23,6 +23,7 @@ h1, .logo
 h2, h3
 {
 	color: #000;
+	
 }
 
 .gourmand-titre 
@@ -113,6 +114,9 @@ h1
 .menu-contenu
 {
 	width: 100%;
+	overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 	
 article
@@ -124,6 +128,10 @@ article
 .piment
 {
 	margin-top: 0;
+	overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
 }
 
 .price
@@ -143,10 +151,10 @@ article
 
 article:hover .check
 {
-		animation: rotation 2s forwards;
+		animation: visible 2s forwards;
 }
 
-@keyframes rotation{
+@keyframes visible{
 	from{
 		width: 0;
 	}
@@ -155,10 +163,17 @@ article:hover .check
 	}
 }
 
-span
+
+
+.check span
 {
   align-self:center;
   margin-left: 30%;
+}
+
+span
+{
+	margin-left: 0;
 }
 
 i.fas.fa-check 
@@ -188,9 +203,10 @@ i.fas.fa-ellipsis-v {
 
 		padding: 20px;
 		background-color: $gris-claire;
-		width: 85%;
+		width: 65%;
 		border-radius: 20px;
 		margin-bottom: 10px;
+		margin-left: 33px;
 }
 
 .liste {
@@ -204,11 +220,22 @@ i.fas.fa-ellipsis-v {
 		@include form;
 	}
 	& li:hover{
-		background-color: rgba(147, 86, 220,0.3);
+		background-color: rgba(255, 121, 218,0.1);
+		.fa-mobile-alt, .fa-store, .fa-ellipsis-v{
+				color: $primaire;
+		}
 	}
-	& li i.fas.fa:hover{
-		color:#9356DC;
-	}
+	
+}
+
+
+span.number {
+    margin-left: -50px;
+    margin-right: 10px;
+    padding: 5px;
+    background: $primaire;
+    border-radius: 50%;
+	padding: 2px 4px;
 }
 
 .restaurant {
@@ -247,7 +274,6 @@ i.fas.fa-ellipsis-v {
 		color: #088f6d;
 		height: 30px;
 		padding: 5px;
-		z-index: 1;
 		position: absolute;
 		top: 10%;
 		right: 10%;
@@ -258,6 +284,9 @@ h3 {
 	display: -webkit-inline-box;
 	font-size: 1em;
 	margin-bottom: 0;
+	overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .photo-emballage
@@ -268,6 +297,7 @@ h3 {
 
 footer {
 	margin: 0;
+	width: 100vw;
 	background-color: #353535;
 	li {
 		a {
@@ -347,9 +377,6 @@ img
 	width: 100%;
 }
 
-
-
-
 .boutton-commander 
 {
     padding-bottom: 20px;
@@ -368,26 +395,64 @@ img
 	line-height: 5;
 }
 
-#loader {
-      width: 100px;
-	  height: 100px;
-	  z-index: 9999;
-	  position: absolute;
-	  top: 50%;
-	  bottom: 50;
-	  right: 50%;
-	  left: 50%;
-      border: 20px solid #CCCCCC;
-      border-top: 20px solid #1177FF;
-      border-radius: 50%;
-	  animation: spin 1s linear infinite;
-	  	  cursor: pointer;
+.index
+{
+	width:100vw;
+ 
+	
+	background-color:black;
+	animation: disparition 4s;
+	opacity:0;
+	
+	z-index: 1000;
+		#loader {
+				width: 100px;
+	  			height: 100px;
+				  
+				 -webkit-transform: translate( -50%, -50% );
+				transform: translate( -50%, -50% ); 
+				top: 35%;
+				left: 25%;
+				border: 20px solid #CCCCCC;
+				border-top: 20px solid #1177FF;
+				border-radius: 50%;
+				animation: spin 4s ease-in-out infinite;
+	  	  		
+  				position:fixed;
+		}
+
+	@keyframes spin {
+				0% { transform: rotate(0deg);}
+				100% { transform: rotate(360deg);}
+	}
+	@keyframes disparition{
+				0%{
+					opacity:1;
+					}
+				25%{
+					opacity:1;
+					}
+				50%{
+					opacity:1;
+					}
+				99%{
+					opacity:1;
+					}
+					
+				100%{
+					opacity:0;
+					}
+	}
 }
 
-@keyframes spin {
-      0% { transform: rotate(0deg);}
-      100% { transform: rotate(360deg);}
+.enveloppe
+{
+	position: absolute;
+	
 }
+
+
+
 
 .menu
 {
