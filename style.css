@@ -109,13 +109,20 @@ article {
   border-radius: 0 20px 20px 0; }
 
 article:hover .check {
-  animation: visible 2s forwards; }
+  animation: visible 1s forwards; }
 
 @keyframes visible {
   from {
     width: 0; }
   to {
     width: 100px; } }
+article:hover .fa-check {
+  transform: rotate(0turn); }
+
+.fa-check {
+  transform: rotate(1turn);
+  transition: transform 1s ease-in-out; }
+
 .check span {
   align-self: center;
   margin-left: 30%; }
