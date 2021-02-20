@@ -162,7 +162,7 @@ i.fas.fa-ellipsis-v {
   margin-left: 33px; }
 .liste li:hover {
   background-color: rgba(255, 121, 218, 0.1); }
-  .liste li:hover .fa-mobile-alt, .liste li:hover .fa-store, .liste li:hover .fa-ellipsis-v {
+  .liste li:hover .fa-mobile-alt, .liste li:hover .fa-store, .liste li:hover .fa-bars, .liste li:hover .fa-ellipsis-v {
     color: #9356DC; }
 
 span.number {
