@@ -1,18 +1,19 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-p {
-  font-family: 'Roboto', sans-serif;
-  color: #9f9f9f;
-  position: initial; }
-
-h1, .logo {
-  font-family: 'Shrikhand', cursive; }
-
 h2, h3 {
   color: #000; }
 
-.gourmand-titre {
-  color: #9f9f9f; }
+h3 {
+  display: -webkit-inline-box;
+  font-size: 1em;
+  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+h1, .logo {
+  font-family: 'Shrikhand', cursive; }
 
 h1 {
   display: -webkit-inline-box;
@@ -21,8 +22,15 @@ h1 {
   padding-left: 20px;
   color: #101010; }
 
-.contenu-resto h3 {
-  width: 90%; }
+.button {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center; }
+
+.boutton-commander {
+  padding-bottom: 20px;
+  text-align: center; }
 
 .logo {
   text-align: center;
@@ -31,121 +39,30 @@ h1 {
   width: 100%;
   width: 100%; }
 
-.cont-page {
-  background-color: #ece9e9;
-  margin-top: -40px;
-  border-radius: 30px 30px 0 0;
-  padding-top: 20px;
-  position: relative; }
+.logo-emballage {
+  width: 90%; }
 
-.formulaire {
-  background-color: #eaeaea;
-  border-top: 2px solid #d3d3d3;
-  padding: 15px 0 15px 0;
-  text-align: center; }
+.logo-image img {
+  width: 40%; }
 
-.text {
-  background-color: #f6f6f6;
-  text-align: center; }
-  .text h2 {
-    margin: 0;
-    text-align: center; }
-  .text p {
-    margin-bottom: 0; }
-
-.button {
-  background-color: #f6f6f6;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  text-align: center; }
-
-.button-explorer a {
-  background: linear-gradient(to bottom right, #ff79da, #9356DC);
-  padding: 10px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-  box-shadow: 1px 3px #918d8d; }
-
-i.fas.fa-heart {
-  color: #9356DC;
-  display: none;
-  text-decoration: none;
-  padding: 5px; }
-
-i.far.fa-heart:hover {
-  display: none;
-  padding: 5px;
-  text-decoration: none; }
-  i.far.fa-heart:hover + i.fas.fa-heart {
-    display: contents; }
-
-.menu-contenu {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-article {
-  display: flex;
-  justify-content: space-between; }
-
-.piment {
-  margin-top: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 0.9em; }
-
-.price {
-  align-self: flex-end;
-  margin-right: 10px; }
-
-.check {
-  display: flex;
-  background-color: #99E2D0;
-  width: 0;
-  overflow: hidden;
+footer {
   margin: 0;
-  border-radius: 0 20px 20px 0; }
+  width: 100vw;
+  background-color: #353535; }
+  footer li {
+    color: white;
+    list-style: none; }
+    footer li a {
+      color: white;
+      text-decoration: none; }
+  footer ul {
+    padding-bottom: 20px; }
 
-article:hover .check {
-  animation: visible 1s forwards; }
-
-@keyframes visible {
-  from {
-    width: 0; }
-  to {
-    width: 100px; } }
-article:hover .fa-check {
-  transform: rotate(0turn); }
-
-.fa-check {
-  transform: rotate(1turn);
-  transition: transform 1s ease-in-out; }
-
-.check span {
-  align-self: center;
-  margin-left: 30%; }
-
-span {
-  margin-left: 0; }
-
-i.fas.fa-check {
-  border-radius: 50%;
-  padding: 5px;
-  background-color: white;
-  color: #99E2D0; }
-
-.liste-ul ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: center; }
-.liste-ul i {
-  padding-right: 20px; }
-
-i.fas.fa-ellipsis-v {
-  padding-right: 0; }
+.logo-footer img {
+  filter: invert(6);
+  width: 50%;
+  padding-left: 40px;
+  padding-top: 20px; }
 
 .liste .phone {
   padding: 20px;
@@ -182,6 +99,209 @@ span.number {
   padding: 2px 6px;
   color: white; }
 
+/*La mise en place de la barre avec le check qui tourne pour validé les menu*/
+article:hover .check {
+  animation: visible 1s forwards; }
+
+@keyframes visible {
+  from {
+    width: 0; }
+  to {
+    width: 100px; } }
+article:hover .fa-check {
+  transform: rotate(0turn); }
+
+.fa-check {
+  transform: rotate(1turn);
+  transition: transform 1s ease-in-out; }
+
+.check {
+  display: flex;
+  background-color: #99E2D0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 0 20px 20px 0; }
+
+i.fas.fa-check {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  color: #99E2D0; }
+
+.check span {
+  align-self: center;
+  margin-left: 30%; }
+
+/*Fin de la mise en place de la barre avec le check qui tourne pour validé les menu*/
+/*Mise en place du loader avec son fond*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    z-index: 2; }
+  100% {
+    transform: rotate(360deg);
+    z-index: 2; } }
+.index {
+  width: 100vw;
+  background-color: black;
+  animation: disparition 4s;
+  opacity: 0;
+  z-index: 0; }
+  .index #loader {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 25%;
+    border: 20px solid #CCCCCC;
+    border-top: 20px solid #1177FF;
+    border-radius: 50%;
+    animation: spin 4s ease-in-out infinite;
+    position: fixed; }
+@keyframes disparition {
+  0% {
+    opacity: 1;
+    z-index: 6; }
+  25% {
+    opacity: 1;
+    z-index: 6; }
+  50% {
+    opacity: 1;
+    z-index: 6; }
+  99% {
+    opacity: 1;
+    z-index: 6; }
+  100% {
+    opacity: 0;
+    z-index: 6; } }
+.enveloppe {
+  position: absolute; }
+
+/*Fin de la mise en place du loader avec son fond*/
+/*La mise en place des barre de menu qui remonte*/
+.menu {
+  animation: remontexte 3s; }
+
+@keyframes remontexte {
+  from {
+    transform: translateY(40px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 2; } }
+/*Fin de la mise en place des barre de menu qui remonte*/
+/*Mise en forme du coeur*/
+i.fas.fa-heart {
+  color: #9356DC;
+  display: none;
+  text-decoration: none;
+  padding: 5px; }
+
+i.far.fa-heart:hover {
+  display: none;
+  padding: 5px;
+  text-decoration: none; }
+  i.far.fa-heart:hover + i.fas.fa-heart {
+    display: contents; }
+
+/*Fin de la mise en forme du coeur*/
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #9f9f9f;
+  position: initial; }
+
+.gourmand-titre {
+  color: #9f9f9f; }
+
+.contenu-resto h3 {
+  width: 90%; }
+
+span.number {
+  margin-left: -50px;
+  margin-right: 10px;
+  padding: 5px;
+  background: #9356DC;
+  border-radius: 50%;
+  padding: 2px 6px;
+  color: white; }
+
+.button-explorer a {
+  background: linear-gradient(to bottom right, #ff79da, #9356DC);
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 1px 3px #918d8d; }
+
+.bouton a {
+  background: linear-gradient(to bottom right, #ff79da, #9356DC);
+  justify-content: center;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 1px 3px #918d8d;
+  line-height: 5; }
+
+.cont-page {
+  background-color: #ece9e9;
+  margin-top: -40px;
+  border-radius: 30px 30px 0 0;
+  padding-top: 20px;
+  position: relative; }
+
+.formulaire {
+  background-color: #eaeaea;
+  border-top: 2px solid #d3d3d3;
+  padding: 15px 0 15px 0;
+  text-align: center; }
+
+.text {
+  background-color: #f6f6f6;
+  text-align: center; }
+  .text h2 {
+    margin: 0;
+    text-align: center; }
+  .text p {
+    margin-bottom: 0; }
+
+.menu-contenu {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+article {
+  display: flex;
+  justify-content: space-between; }
+
+.piment {
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.9em; }
+
+.price {
+  align-self: flex-end;
+  margin-right: 10px; }
+
+span {
+  margin-left: 0; }
+
+.liste-ul ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center; }
+.liste-ul i {
+  padding-right: 20px; }
+
+i.fas.fa-ellipsis-v {
+  padding-right: 0; }
+
 .restaurant {
   background-color: #f6f6f6;
   padding-bottom: 10px; }
@@ -215,36 +335,9 @@ span.number {
   right: 10%;
   line-height: 2; }
 
-h3 {
-  display: -webkit-inline-box;
-  font-size: 1em;
-  margin-bottom: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
 .photo-emballage {
   padding-top: 20px;
   padding-bottom: 30px; }
-
-footer {
-  margin: 0;
-  width: 100vw;
-  background-color: #353535; }
-  footer li {
-    color: white;
-    list-style: none; }
-    footer li a {
-      color: white;
-      text-decoration: none; }
-  footer ul {
-    padding-bottom: 20px; }
-
-.logo-footer img {
-  filter: invert(6);
-  width: 50%;
-  padding-left: 40px;
-  padding-top: 20px; }
 
 .fa-arrow-left {
   width: 10%;
@@ -257,12 +350,6 @@ footer {
   left: 2%;
   line-height: 2;
   color: black; }
-
-.logo-emballage {
-  width: 90%; }
-
-.logo-image img {
-  width: 40%; }
 
 .gourmand-titre {
   margin-left: 15px; }
@@ -283,75 +370,5 @@ footer {
 
 img {
   width: 100%; }
-
-.boutton-commander {
-  padding-bottom: 20px;
-  text-align: center; }
-
-.bouton a {
-  background: linear-gradient(to bottom right, #ff79da, #9356DC);
-  justify-content: center;
-  padding: 10px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-  box-shadow: 1px 3px #918d8d;
-  line-height: 5; }
-
-.index {
-  width: 100vw;
-  background-color: black;
-  animation: disparition 4s;
-  opacity: 0;
-  z-index: 0; }
-  .index #loader {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 35%;
-    left: 25%;
-    border: 20px solid #CCCCCC;
-    border-top: 20px solid #1177FF;
-    border-radius: 50%;
-    animation: spin 4s ease-in-out infinite;
-    position: fixed; }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    z-index: 2; }
-  100% {
-    transform: rotate(360deg);
-    z-index: 2; } }
-@keyframes disparition {
-  0% {
-    opacity: 1;
-    z-index: 6; }
-  25% {
-    opacity: 1;
-    z-index: 6; }
-  50% {
-    opacity: 1;
-    z-index: 6; }
-  99% {
-    opacity: 1;
-    z-index: 6; }
-  100% {
-    opacity: 0;
-    z-index: 6; } }
-.enveloppe {
-  position: absolute; }
-
-.menu {
-  animation: remontexte 3s; }
-
-@keyframes remontexte {
-  from {
-    transform: translateY(40px);
-    opacity: 0; }
-  to {
-    transform: translateY(0);
-    opacity: 2; } }
 
 /*# sourceMappingURL=style.css.map */

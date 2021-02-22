@@ -1,0 +1,159 @@
+/*La mise en place de la barre avec le check qui tourne pour validé les menu*/
+
+article:hover .check
+{
+		animation: visible 1s forwards;
+}
+
+@keyframes visible{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100px;
+	}
+}
+
+article{
+&:hover .fa-check{
+  
+    transform: rotate(0turn);
+  
+  }
+}
+
+.fa-check{
+  transform: rotate(1turn);
+        transition: transform 1s ease-in-out;
+}
+
+.check{
+  display:flex;
+  background-color:$tertiaire;
+  width:0;
+  overflow:hidden;
+  margin: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+i.fas.fa-check 
+{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+	color: $tertiaire;
+}
+
+.check span
+{
+  align-self:center;
+  margin-left: 30%;
+}
+
+/*Fin de la mise en place de la barre avec le check qui tourne pour validé les menu*/
+
+/*Mise en place du loader avec son fond*/
+
+@keyframes spin {
+				0% { transform: rotate(0deg);
+						z-index: 2;
+				}
+				100% { transform: rotate(360deg);
+						z-index: 2;
+				}
+	}
+
+.index
+{
+	width:100vw;
+ 	
+	background-color:black;
+	animation: disparition 4s;
+	opacity:0;
+	z-index: 0;
+		#loader {
+				width: 100px;
+	  			height: 100px;
+				  z-index: 1;
+				-webkit-transform: translate( -50%, -50% );
+				transform: translate( -50%, -50% ); 
+				top: 35%;
+				left: 25%;
+				border: 20px solid #CCCCCC;
+				border-top: 20px solid #1177FF;
+				border-radius: 50%;
+				animation: spin 4s ease-in-out infinite;
+	  	  		position:fixed;
+		        }
+            @keyframes disparition{
+				0%{
+					opacity:1;
+					z-index: 6;
+					}
+				25%{
+					opacity:1;
+					z-index: 6;
+					}
+				50%{
+					opacity:1;
+					z-index: 6;
+					}
+				99%{
+					opacity:1;
+					z-index: 6;
+					}
+					
+				100%{
+					opacity:0;
+					z-index: 6;
+					}
+	}
+}
+
+.enveloppe
+{
+	position: absolute;
+}
+
+/*Fin de la mise en place du loader avec son fond*/
+
+/*La mise en place des barre de menu qui remonte*/
+
+.menu
+{
+	 
+	animation: remontexte 3s;
+}
+
+@keyframes remontexte{
+	from{
+			transform: translateY(40px);
+			opacity: 0;
+	}
+	to{
+			transform: translateY(0);
+			opacity: 2;
+	}
+}
+
+/*Fin de la mise en place des barre de menu qui remonte*/
+
+/*Mise en forme du coeur*/
+
+i.fas.fa-heart {
+    color:#9356DC;
+    display: none;
+   text-decoration: none;
+   padding: 5px;
+}
+
+i.far.fa-heart:hover{
+    display: none;
+	padding: 5px;
+	text-decoration: none;
+    & + i.fas.fa-heart{
+        display:contents;
+    }
+}
+
+/*Fin de la mise en forme du coeur*/

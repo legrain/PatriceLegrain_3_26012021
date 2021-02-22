@@ -1,0 +1,29 @@
+@mixin form {
+
+		padding: 20px;
+		background-color: $gris-claire;
+		width: 65%;
+		border-radius: 20px;
+		margin-bottom: 10px;
+		margin-left: 33px;
+}
+
+.liste {
+	.phone {
+		@include form;
+	}
+	.bars {
+		@include form;
+	}
+	.store {
+		@include form;
+	}
+	& li:hover{
+		background-color: rgba(255, 121, 218,0.1);
+		.fa-mobile-alt, .fa-store, .fa-bars, .fa-ellipsis-v{
+				color: $primaire;
+		}
+	}
+	
+}
+
