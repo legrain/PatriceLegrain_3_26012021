@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {"bootstrap": "4.2.1",},
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  },
   "devDependencies": {},
   "scripts": {
-    "sass":"sass --watch style.scss:style.css --style expanded "
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "sass": "sass --watch style.scss:style.css --style expanded ",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/legrain/PatriceLegrain_3_26012021.git"
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/legrain/PatriceLegrain_3_26012021/issues"
   },

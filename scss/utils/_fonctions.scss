@@ -66,7 +66,6 @@ i.fas.fa-check
 .index
 {
 	width:100vw;
- 	
 	background-color:black;
 	animation: disparition 4s;
 	opacity:0;
@@ -74,7 +73,7 @@ i.fas.fa-check
 		#loader {
 				width: 100px;
 	  			height: 100px;
-				  z-index: 1;
+				z-index: 0;
 				-webkit-transform: translate( -50%, -50% );
 				transform: translate( -50%, -50% ); 
 				top: 35%;
@@ -88,24 +87,24 @@ i.fas.fa-check
             @keyframes disparition{
 				0%{
 					opacity:1;
-					z-index: 6;
+					z-index: 0;
 					}
 				25%{
 					opacity:1;
-					z-index: 6;
+					z-index: 0;
 					}
 				50%{
 					opacity:1;
-					z-index: 6;
+					z-index: 0;
 					}
 				99%{
 					opacity:1;
-					z-index: 6;
+					z-index: 0;
 					}
 					
 				100%{
 					opacity:0;
-					z-index: 6;
+					z-index: 0;
 					}
 	}
 }
@@ -143,8 +142,17 @@ i.fas.fa-check
 i.fas.fa-heart {
     color:#9356DC;
     display: none;
+	list-style-type: none;
    text-decoration: none;
    padding: 5px;
+   font-size: 1.2em;
+}
+
+i.far.fa-heart
+{
+	font-size: 1.2em;
+	list-style-type: none;
+	text-decoration: none;
 }
 
 i.far.fa-heart:hover{
