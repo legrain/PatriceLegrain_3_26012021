@@ -156,7 +156,9 @@ a{
 
 
 i.fas.fa-heart {
-    color: $primaire;
+    background-image: linear-gradient(to bottom right,$secondaire ,$primaire);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
     display: none;
    	font-size: 1.2em;
 }

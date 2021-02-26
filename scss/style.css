@@ -215,7 +215,9 @@ a {
   text-decoration: none; }
 
 i.fas.fa-heart {
-  color: #9356DC;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: none;
   font-size: 1.2em; }
 
