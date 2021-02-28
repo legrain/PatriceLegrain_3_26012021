@@ -1,11 +1,16 @@
 @mixin form {
 
 		padding: 20px;
+		display: -webkit-box;
 		background-color: $gris-claire;
-		width: 65%;
+		width: 75vw;
+		height: 30px;
 		border-radius: 20px;
 		margin-bottom: 10px;
-		margin-left: 33px;
+		margin-left: 20px;
+		font-weight: bold;
+		line-height: 2;
+		box-shadow: 2px 5px 4px #e7e7e7;
 }
 
 .liste {
