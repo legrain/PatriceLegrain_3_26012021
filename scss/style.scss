@@ -38,7 +38,7 @@ h2.titre-fonc-contenu{
 .liste .phone, .liste .bars, .liste .store{
 	@include xs{
 		margin-bottom: 20px;
-		width: 80vw;
+		width: 75vw;
 	}
 	@include sm{
 		width: 80vw;
@@ -403,7 +403,11 @@ i.fas.fa-arrow-left{
 }
 
 
-
+input#pseudo {
+    border: none;
+    text-align: center;
+    background-color: #eaeaea;
+}
 
 
 .photo-emballage h2 {
@@ -539,9 +543,30 @@ span
 
 i.fas.fa-ellipsis-v {
 	padding-right: 0;
+	font-size: 1em;
+    margin-left: -27px;
 }
 
+i.fas.fa-bars{
+	margin-right: 11px;
+	font-size: 1em;
+}
 
+i.fas.fa-mobile-alt {
+    font-size: 1.3em;
+    margin-left: -25px;
+    margin-right: 12px;
+}
+
+i.fas.fa-store {
+	font-size: 1em;
+    margin-left: -25px;
+    margin-right: 12px;
+}
+
+.lili{
+	font-size: 1.1em;
+}
 
 .restaurant {
 	background-color: $gris-claire;
@@ -623,6 +648,16 @@ img
 {
 	width: 100%;
 }
+
+i.fas.fa-utensils {
+    margin-right: 17px;
+}
+
+i.fas.fa-hands-helping {
+	margin-right: 10px;
+}
+
+
 
 
 

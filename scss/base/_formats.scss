@@ -1,22 +1,17 @@
-h2, h3
+h1,h2, h3, .logo
 {
 	color: #000;
-	
+	font-family: 'Shrikhand';
 }
 
 h3 
 {
 	display: -webkit-inline-box;
-	font-size: 1em;
+	font-size: 1.2em;
 	margin-bottom: 0;
 	overflow:hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-h1, .logo
-{
-	font-family: 'Shrikhand', cursive;
 }
 
 h1
@@ -31,8 +26,9 @@ h1
 p
 {
 	font-family: 'Roboto', sans-serif;
-	color: #9f9f9f;
 	position:initial ;
+	font-weight: bold;
+	color: black;
 }
 
 h1.titre-fonc-contenu {
