@@ -22,6 +22,15 @@ h1 {
   padding-left: 20px;
   color: #101010; }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #9f9f9f;
+  position: initial; }
+
+h1.titre-fonc-contenu {
+  font-family: none;
+  font-size: 1.5em; }
+
 .button {
   background-color: #f6f6f6;
   padding-top: 20px;
@@ -69,38 +78,35 @@ footer {
   margin-left: -20px; }
 
 .liste .phone {
-  padding: 20px;
+  padding: 18px;
   display: -webkit-box;
   background-color: #f6f6f6;
-  width: 75vw;
   height: 30px;
   border-radius: 20px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 29px;
   font-weight: bold;
   line-height: 2;
   box-shadow: 2px 5px 4px #e7e7e7; }
 .liste .bars {
-  padding: 20px;
+  padding: 18px;
   display: -webkit-box;
   background-color: #f6f6f6;
-  width: 75vw;
   height: 30px;
   border-radius: 20px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 29px;
   font-weight: bold;
   line-height: 2;
   box-shadow: 2px 5px 4px #e7e7e7; }
 .liste .store {
-  padding: 20px;
+  padding: 18px;
   display: -webkit-box;
   background-color: #f6f6f6;
-  width: 75vw;
   height: 30px;
   border-radius: 20px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 29px;
   font-weight: bold;
   line-height: 2;
   box-shadow: 2px 5px 4px #e7e7e7; }
@@ -145,76 +151,54 @@ i.fas.fa-check {
 
 /*Fin de la mise en place de la barre avec le check qui tourne pour validé les menu*/
 /*Mise en place du loader avec son fond*/
-/*@keyframes spin {
-				0% { 
-					transform: rotate(0deg);
-					top: 35%;
-					left: 25%;
-					opacity: 1;
-				}
-				99% { 
-					transform: rotate(360deg);
-					top: 35%;
-					left: 25%;
-					opacity: 1;
-						
-				}
-				100%{
-					left: 9999px;
-					opacity: 0;
-				}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    top: 35%;
+    left: 25%;
+    opacity: 1; }
+  99% {
+    transform: rotate(360deg);
+    top: 35%;
+    left: 25%;
+    opacity: 1; }
+  100% {
+    left: 9999px;
+    opacity: 0; } }
+.index {
+  width: 100vw;
+  animation: disparition 4s forwards;
+  opacity: 0; }
+  .index #loader {
+    width: 100px;
+    height: 100px;
+    border: 20px solid #CCCCCC;
+    border-top: 20px solid #1177FF;
+    border-radius: 50%;
+    animation: spin 4s ease-in-out forwards;
+    position: fixed; }
+@keyframes disparition {
+  0% {
+    opacity: 1;
+    background-color: white;
+    height: 600vh; }
+  25% {
+    opacity: 1;
+    background-color: white;
+    height: 600vh; }
+  50% {
+    opacity: 1;
+    background-color: white;
+    height: 600vh; }
+  99% {
+    opacity: 1;
+    background-color: white;
+    height: 600vh; }
+  100% {
+    opacity: 0; } }
+.enveloppe {
+  position: absolute; }
 
-	}
-
-.index
-{
-	width:100vw;
-	animation: disparition 4s forwards;
-	opacity:0;
-			#loader {
-				width: 100px;
-	  			height: 100px;
-				border: 20px solid #CCCCCC;
-				border-top: 20px solid #1177FF;
-				border-radius: 50%;
-				animation: spin 4s ease-in-out forwards;
-	  	  		position:fixed;
-		        }
-            @keyframes disparition{
-				0%{
-					opacity:1;
-					background-color: white;
-					height: 600vh;
-					}
-				25%{
-					opacity:1;
-					background-color: white;
-					height: 600vh;
-					}
-				50%{
-					opacity:1;
-					background-color: white;
-					height: 600vh;
-					}
-				99%{
-					opacity:1;
-					background-color: white;
-					height: 600vh;
-					}
-					
-				100%{
-					opacity:0;
-					
-					
-					}
-	}
-}
-
-.enveloppe
-{
-	position: absolute;
-	
-}*/
 /*Fin de la mise en place du loader avec son fond*/
 /*La mise en place des barre de menu qui remonte*/
 .menu {
@@ -236,7 +220,7 @@ a {
 i.fas.fa-heart {
   background-image: linear-gradient(to bottom right, #ff79da, #9356DC);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: crimson;
   display: none;
   font-size: 1.2em; }
 
@@ -270,10 +254,11 @@ i.far.fa-heart:hover {
 
 @media screen and (max-width: 599px) {
   .liste .phone, .liste .bars, .liste .store {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px;
+    width: 80vw; } }
 @media screen and (min-width: 600px) and (max-width: 799px) {
   .liste .phone, .liste .bars, .liste .store {
-    width: 85vw;
+    width: 80vw;
     font-size: 1.3em;
     line-height: 1.2;
     margin-left: 35px; } }
@@ -283,11 +268,11 @@ i.far.fa-heart:hover {
     display: flex; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   .liste .phone, .liste .bars, .liste .store {
-    width: 30vw;
+    width: 27vw;
     display: flex; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .liste .phone, .liste .bars, .liste .store {
-    width: 30vw;
+    width: 28vw;
     display: flex; } }
 
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -420,7 +405,7 @@ footer ul {
     font-size: 1.9rem; } }
 
 /*Fin du media query de la page index*/
-/*Media query de la page "La palette de goût"*/
+/*Media query des pages restaurant"*/
 @media screen and (max-width: 599px) {
   i.fas.fa-arrow-left {
     font-size: 1.2em; } }
@@ -485,6 +470,7 @@ footer ul {
   h3.gourmand-titre {
     font-size: 1.4em; } }
 
+/*Fin du media query des pages des restaurants*/
 .menu2 {
   margin-top: 20px; }
 
@@ -519,15 +505,6 @@ i.fas.fa-arrow-left {
   top: 2vw;
   font-size: 1.5em; }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  color: #9f9f9f;
-  position: initial; }
-
-h1.titre-fonc-contenu {
-  font-family: none;
-  font-size: 1.5em; }
-
 .photo-emballage h2 {
   margin-left: 20px; }
 
@@ -540,7 +517,22 @@ h1.titre-fonc-contenu {
 .resto {
   background-color: white;
   border-radius: 15px;
-  box-shadow: 2px 5px 5px 5px #eaeaea; }
+  box-shadow: 2px 5px 5px 5px #eaeaea;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+h3.gourmand-titre {
+  position: relative;
+  padding-bottom: 5px; }
+
+h3.gourmand-titre:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  right: 50%;
+  border-bottom: 2px solid #99E2D0; }
 
 .button-explorer a {
   background: linear-gradient(to bottom right, #ff79da, #9356DC);
@@ -611,7 +603,7 @@ span {
   padding-left: 0;
   text-align: center; }
 .liste-ul i {
-  padding-right: 20px; }
+  padding-right: 10px; }
 
 i.fas.fa-ellipsis-v {
   padding-right: 0; }
@@ -619,7 +611,7 @@ i.fas.fa-ellipsis-v {
 .restaurant {
   background-color: #f6f6f6;
   padding-bottom: 10px;
-  width: 100vw; }
+  width: 96vw; }
 
 .contenu-resto {
   padding-left: 10px; }

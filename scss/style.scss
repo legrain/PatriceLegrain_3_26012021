@@ -38,9 +38,10 @@ h2.titre-fonc-contenu{
 .liste .phone, .liste .bars, .liste .store{
 	@include xs{
 		margin-bottom: 20px;
+		width: 80vw;
 	}
 	@include sm{
-		width: 85vw;
+		width: 80vw;
 		font-size: 1.3em;
 		line-height: 1.2;
 		margin-left: 35px;
@@ -50,11 +51,11 @@ h2.titre-fonc-contenu{
 		display: flex;
   	}
   	@include lg {
-    	width: 30vw;
+    	width: 27vw;
 		display: flex;
   	}
   	@include xl {
-    	width: 30vw;
+    	width: 28vw;
 		display: flex;
   	}
 }
@@ -231,7 +232,7 @@ footer li{
 
 /*Fin du media query de la page index*/
 
-/*Media query de la page "La palette de goût"*/
+/*Media query des pages restaurant"*/
 
 i.fas.fa-arrow-left{
 	@include xs{
@@ -352,6 +353,8 @@ h3.gourmand-titre{
   	}
 }
 
+/*Fin du media query des pages des restaurants*/
+
 .menu2{
 	margin-top: 20px;
 }
@@ -399,17 +402,9 @@ i.fas.fa-arrow-left{
 	font-size: 1.5em;
 }
 
-p
-{
-	font-family: 'Roboto', sans-serif;
-	color: #9f9f9f;
-	position:initial ;
-}
 
-h1.titre-fonc-contenu {
-    font-family: none;
-	font-size: 1.5em;
-}
+
+
 
 .photo-emballage h2 {
     margin-left: 20px;
@@ -429,10 +424,24 @@ h1.titre-fonc-contenu {
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 2px 5px 5px 5px $gris-fonce;
-
+	margin-right: 10px;
+    margin-left: 10px;
 }
 
+h3.gourmand-titre {
+	    position: relative;
+		padding-bottom: 5px;
+}
 
+h3.gourmand-titre:after{
+	    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    right: 50%;
+    border-bottom: 2px solid $tertiaire;
+}
 
 .button-explorer a {
 		background: linear-gradient(to bottom right,$secondaire ,$primaire);
@@ -524,7 +533,7 @@ span
 		text-align: center;
 	}
 	i {
-		padding-right: 20px;
+		padding-right: 10px;
 	}
 }
 
@@ -537,7 +546,7 @@ i.fas.fa-ellipsis-v {
 .restaurant {
 	background-color: $gris-claire;
 	padding-bottom: 10px;
-	width: 100vw;
+	width: 96vw;
 }
 
 
