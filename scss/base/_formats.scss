@@ -1,4 +1,4 @@
-h1,h2, h3, .logo
+h1,h2, .logo
 {
 	color: #000;
 	font-family: 'Shrikhand';
@@ -7,7 +7,7 @@ h1,h2, h3, .logo
 h3 
 {
 	display: -webkit-inline-box;
-	font-size: 1.2em;
+	font-size: 1.05em;
 	margin-bottom: 0;
 	overflow:hidden;
   white-space: nowrap;
@@ -18,17 +18,9 @@ h1
 {
 	display: -webkit-inline-box;
 	font-size: 1.4em;
-	width: 85vw;
+	width: 80vw;
 	padding-left: 20px;
 	color: #101010;
-}
-
-p
-{
-	font-family: 'Roboto', sans-serif;
-	position:initial ;
-	font-weight: bold;
-	color: black;
 }
 
 h1.titre-fonc-contenu {

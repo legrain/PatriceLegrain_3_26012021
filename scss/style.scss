@@ -364,6 +364,11 @@ body
 	margin: 0;
 }
 
+.text-emballage 
+{
+    padding-bottom: 20px;
+}
+
 span.number{
 	margin-left: -34px;
 	padding-left: 10px;
@@ -381,6 +386,7 @@ span.number{
 .photo-resto p
 {
 		margin: 0;
+		color: black;
 }
 
 .photo-resto{
@@ -414,22 +420,16 @@ input#pseudo {
     margin-left: 20px;
 }
 
-.gourmand-titre 
-{
-	color: #9f9f9f;
-}
-
 .contenu-resto h3
 {
 	width: 85%;
+	color: black;
 }
 
 .resto{
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 2px 5px 5px 5px $gris-fonce;
-	margin-right: 10px;
-    margin-left: 10px;
 }
 
 h3.gourmand-titre {
@@ -517,12 +517,17 @@ article
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+	position:initial ;
+	font-weight: bold;
+	color: black;
 }
 
 .price
 {
   align-self:flex-end;
   margin-right: 10px;
+  font-family: none;
 }
 
 span
@@ -571,7 +576,7 @@ i.fas.fa-store {
 .restaurant {
 	background-color: $gris-claire;
 	padding-bottom: 10px;
-	width: 96vw;
+	width: 100vw;
 }
 
 

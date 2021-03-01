@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-h1, h2, h3, .logo {
+h1, h2, .logo {
   color: #000;
   font-family: 'Shrikhand'; }
 
 h3 {
   display: -webkit-inline-box;
-  font-size: 1.2em;
+  font-size: 1.05em;
   margin-bottom: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -16,15 +16,9 @@ h3 {
 h1 {
   display: -webkit-inline-box;
   font-size: 1.4em;
-  width: 85vw;
+  width: 80vw;
   padding-left: 20px;
   color: #101010; }
-
-p {
-  font-family: 'Roboto', sans-serif;
-  position: initial;
-  font-weight: bold;
-  color: black; }
 
 h1.titre-fonc-contenu {
   font-family: none;
@@ -58,6 +52,7 @@ footer {
   width: 100vw;
   background-color: #353535; }
   footer li {
+    margin-bottom: 10px;
     color: white;
     list-style: none; }
     footer li a {
@@ -110,7 +105,7 @@ footer {
   line-height: 2;
   box-shadow: 2px 5px 4px #e7e7e7; }
 .liste li:hover {
-  background-color: rgba(255, 121, 218, 0.1); }
+  background-color: #f5edff; }
   .liste li:hover .fa-mobile-alt, .liste li:hover .fa-store, .liste li:hover .fa-bars, .liste li:hover .fa-ellipsis-v {
     color: #9356DC; }
 
@@ -246,7 +241,8 @@ i.fas.fa-heart {
   font-size: 1.2em; }
 
 i.far.fa-heart {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  color: black; }
 
 i.far.fa-heart:hover {
   display: none; }
@@ -498,6 +494,9 @@ footer ul {
 body {
   margin: 0; }
 
+.text-emballage {
+  padding-bottom: 20px; }
+
 span.number {
   margin-left: -34px;
   padding-left: 10px;
@@ -511,7 +510,8 @@ span.number {
   color: #918d8d; }
 
 .photo-resto p {
-  margin: 0; }
+  margin: 0;
+  color: black; }
 
 .photo-resto {
   position: relative; }
@@ -534,18 +534,14 @@ input#pseudo {
 .photo-emballage h2 {
   margin-left: 20px; }
 
-.gourmand-titre {
-  color: #9f9f9f; }
-
 .contenu-resto h3 {
-  width: 85%; }
+  width: 85%;
+  color: black; }
 
 .resto {
   background-color: white;
   border-radius: 15px;
-  box-shadow: 2px 5px 5px 5px #eaeaea;
-  margin-right: 10px;
-  margin-left: 10px; }
+  box-shadow: 2px 5px 5px 5px #eaeaea; }
 
 h3.gourmand-titre {
   position: relative;
@@ -615,11 +611,16 @@ article {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif;
+  position: initial;
+  font-weight: bold;
+  color: black; }
 
 .price {
   align-self: flex-end;
-  margin-right: 10px; }
+  margin-right: 10px;
+  font-family: none; }
 
 span {
   margin-left: 0; }
@@ -656,7 +657,7 @@ i.fas.fa-store {
 .restaurant {
   background-color: #f6f6f6;
   padding-bottom: 10px;
-  width: 96vw; }
+  width: 100vw; }
 
 .contenu-resto {
   padding-left: 10px; }
