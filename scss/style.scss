@@ -128,7 +128,7 @@ span.number{
 
 .resto{
 	@include xs{
-	margin: 15px;
+	margin: 5vw;
 	width: 90vw;
 	padding-bottom: 10px;
 	padding-left: 0;
@@ -140,19 +140,16 @@ span.number{
 	width: 100vw;
 	}
 	@include md {
-	margin: 5px;
 	padding-bottom: 10px;
 	padding-left: 0;
 	width: 40vw;
   	}
   	@include lg {
-    margin: 5px;
 	padding-bottom: 10px;
 	padding-left: 0;
 	width: 40vw;
   	}
   	@include xl {
-    margin: 5px;
 	padding-bottom: 10px;
 	padding-left: 0;
 	width: 40vw;
@@ -173,15 +170,15 @@ span.number{
 	}
 	@include md {
     	display: flex;
-		margin: 2px;
+		
   	}
   	@include lg {
     	display: flex;
-		margin: 2px;
+		
   	}
   	@include xl {
     	display: flex;
-		margin: 2px;
+		
   	}
 }
 
@@ -228,6 +225,18 @@ footer li{
     	margin-right: 30px;
 		font-size: 1.9rem;
   	}
+}
+
+i.fas.fa-utensils{
+	@include xs{
+		margin-right: 17px;
+	}
+}
+
+i.fas.fa-hands-helping {
+	@include xs{
+		margin-right: 10px;
+	}
 }
 
 /*Fin du media query de la page index*/
@@ -314,6 +323,42 @@ h1{
   	@include xl {
     	width: 30vw;
 		margin: 5px;
+		margin-left: 1vw;
+  	}
+}
+
+.gourmand-titre {
+	@include xs{
+		margin-left: 15px;
+	}
+	@include sm{
+		margin-left: 15px;
+	}
+	@include md {
+    	margin-left: 15px;
+  	}
+  	@include lg {
+    	margin-left: 30px;
+  	}
+  	@include xl {
+    	margin-left: 30px;
+  	}
+}
+.menu2{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	margin-top: 23px;
+  	}
+  	@include lg {
+    	margin-top: 23px;
+  	}
+  	@include xl {
+    	margin-top: 30px;
   	}
 }
 
@@ -428,6 +473,7 @@ input#pseudo {
 
 .resto{
 	background-color: white;
+	margin: 5vw;
 	border-radius: 15px;
 	box-shadow: 2px 5px 5px 5px $gris-fonce;
 }
@@ -435,6 +481,7 @@ input#pseudo {
 h3.gourmand-titre {
 	    position: relative;
 		padding-bottom: 5px;
+		margin-bottom: 10px;
 }
 
 h3.gourmand-titre:after{
@@ -622,11 +669,6 @@ i.fas.fa-store {
     color: black;
 }
 
-.gourmand-titre
-{
-	margin-left: 15px;
-}
-
 .photo-gout {
 	img {
 		width: 100%;
@@ -654,13 +696,9 @@ img
 	width: 100%;
 }
 
-i.fas.fa-utensils {
-    margin-right: 17px;
-}
 
-i.fas.fa-hands-helping {
-	margin-right: 10px;
-}
+
+
 
 
 

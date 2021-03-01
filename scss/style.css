@@ -338,7 +338,7 @@ i.far.fa-heart:hover {
 
 @media screen and (max-width: 599px) {
   .resto {
-    margin: 15px;
+    margin: 5vw;
     width: 90vw;
     padding-bottom: 10px;
     padding-left: 0; } }
@@ -350,19 +350,16 @@ i.far.fa-heart:hover {
     width: 100vw; } }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   .resto {
-    margin: 5px;
     padding-bottom: 10px;
     padding-left: 0;
     width: 40vw; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   .resto {
-    margin: 5px;
     padding-bottom: 10px;
     padding-left: 0;
     width: 40vw; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .resto {
-    margin: 5px;
     padding-bottom: 10px;
     padding-left: 0;
     width: 40vw; } }
@@ -377,16 +374,13 @@ i.far.fa-heart:hover {
     width: 100%; } }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   .photo-resto {
-    display: flex;
-    margin: 2px; } }
+    display: flex; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   .photo-resto {
-    display: flex;
-    margin: 2px; } }
+    display: flex; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .photo-resto {
-    display: flex;
-    margin: 2px; } }
+    display: flex; } }
 
 footer ul {
   margin-bottom: 0; }
@@ -420,6 +414,14 @@ footer ul {
   footer li {
     margin-right: 30px;
     font-size: 1.9rem; } }
+
+@media screen and (max-width: 599px) {
+  i.fas.fa-utensils {
+    margin-right: 17px; } }
+
+@media screen and (max-width: 599px) {
+  i.fas.fa-hands-helping {
+    margin-right: 10px; } }
 
 /*Fin du media query de la page index*/
 /*Media query des pages restaurant"*/
@@ -471,7 +473,34 @@ footer ul {
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .menu {
     width: 30vw;
-    margin: 5px; } }
+    margin: 5px;
+    margin-left: 1vw; } }
+
+@media screen and (max-width: 599px) {
+  .gourmand-titre {
+    margin-left: 15px; } }
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .gourmand-titre {
+    margin-left: 15px; } }
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .gourmand-titre {
+    margin-left: 15px; } }
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .gourmand-titre {
+    margin-left: 30px; } }
+@media screen and (min-width: 1400px) and (max-width: 5000px) {
+  .gourmand-titre {
+    margin-left: 30px; } }
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .menu2 {
+    margin-top: 23px; } }
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .menu2 {
+    margin-top: 23px; } }
+@media screen and (min-width: 1400px) and (max-width: 5000px) {
+  .menu2 {
+    margin-top: 30px; } }
 
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .menu-contenu {
@@ -540,12 +569,14 @@ input#pseudo {
 
 .resto {
   background-color: white;
+  margin: 5vw;
   border-radius: 15px;
   box-shadow: 2px 5px 5px 5px #eaeaea; }
 
 h3.gourmand-titre {
   position: relative;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  margin-bottom: 10px; }
 
 h3.gourmand-titre:after {
   content: "";
@@ -693,9 +724,6 @@ i.fas.fa-store {
   line-height: 2;
   color: black; }
 
-.gourmand-titre {
-  margin-left: 15px; }
-
 .photo-gout img {
   width: 100%; }
 
@@ -713,11 +741,5 @@ i.fas.fa-store {
 
 img {
   width: 100%; }
-
-i.fas.fa-utensils {
-  margin-right: 17px; }
-
-i.fas.fa-hands-helping {
-  margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
