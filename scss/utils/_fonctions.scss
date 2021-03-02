@@ -54,19 +54,18 @@ i.fas.fa-check
 
 /*Mise en place du loader avec son fond*/
 
-/*@keyframes spin {
+@keyframes spin {
 				0% { 
 					transform: rotate(0deg);
-					top: 35%;
-					left: 25%;
+					left: 50%;
+					top: 50%;
 					opacity: 1;
 				}
 				99% { 
 					transform: rotate(360deg);
-					top: 35%;
-					left: 25%;
+					left: 50%;
+					top: 50%;
 					opacity: 1;
-						
 				}
 				100%{
 					left: 9999px;
@@ -123,8 +122,7 @@ i.fas.fa-check
 {
 	position: absolute;
 	
-}*/
-
+}
 /*Fin de la mise en place du loader avec son fond*/
 
 /*La mise en place des barre de menu qui remonte*/

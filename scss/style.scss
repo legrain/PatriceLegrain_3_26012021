@@ -42,9 +42,9 @@ h2.titre-fonc-contenu{
 	}
 	@include sm{
 		width: 80vw;
-		font-size: 1.3em;
 		line-height: 1.2;
 		margin-left: 35px;
+		margin-bottom: 20px;
 	}
 	@include md {
     	width: 25vw;
@@ -53,6 +53,7 @@ h2.titre-fonc-contenu{
   	@include lg {
     	width: 27vw;
 		display: flex;
+		margin-right: 40px;
   	}
   	@include xl {
     	width: 28vw;
@@ -80,10 +81,10 @@ h2.titre-fonc-contenu{
 
 .liste-ul i{
 	@include xs{
-		
+		padding-right: 10px;
 	}
 	@include sm{
-		
+		padding-right: 10px;
 	}
 	@include md {
     	line-height: 2;
@@ -105,7 +106,7 @@ span.number{
 	}
 	@include sm{
 	margin-right: 25vw;
-	line-height: 1.4;
+	line-height: 2;
 	}
 	@include md {
 	margin-right: 2vw;
@@ -118,9 +119,92 @@ span.number{
 	line-height: 2;
   	}
   	@include xl {
-    margin-right: 2vw;
+    margin-right: 4vw;
     padding-left: 10px;
 	line-height: 2;	
+  	}
+}
+
+.lili{
+	@include xs{
+		font-size: 1.1em;
+	}
+	@include sm{
+		font-size: 1.1em;
+	}
+	@include md {
+    	
+		
+  	}
+  	@include lg {
+    	
+		
+  	}
+  	@include xl {
+    	
+		
+  	}
+}
+
+.fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store{
+	@include xs{
+		    margin-left: -25px;
+    		margin-right: 12px;
+	}
+	@include sm{
+		    margin-left: -25px;
+    margin-right: 12px;
+	}
+	@include md {
+    	margin: 0;
+		
+  	}
+  	@include lg {
+    	margin: 0;
+		
+  	}
+  	@include xl {
+    	margin: 0;
+		
+  	}
+}
+
+.fa-mobile-alt, .fa-bars, .fa-store{
+	@include xs{
+		    
+	}
+	@include sm{
+		    
+	}
+	@include md {
+    	
+  	}
+  	@include lg {
+    	margin-right: 20px;
+  	}
+  	@include xl {
+    	margin-right: 20px;
+  	}
+}
+
+i.fas.fa-mobile-alt{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	line-height: 1.5;
+		
+  	}
+  	@include lg {
+    	line-height: 1.5;
+		
+  	}
+  	@include xl {
+    	line-height: 1.5;
+		
   	}
 }
 
@@ -134,29 +218,30 @@ span.number{
 	padding-left: 0;
 	}
 	@include sm{
-	margin: 5px;
+	margin: 5vw;
 	padding-bottom: 10px;
 	padding-left: 0;
-	width: 100vw;
+	width: 90vw;
 	}
 	@include md {
 	padding-bottom: 10px;
+	margin: 1vw;
 	padding-left: 0;
 	width: 40vw;
   	}
   	@include lg {
 	padding-bottom: 10px;
+	margin: 1vw;
 	padding-left: 0;
 	width: 40vw;
   	}
   	@include xl {
 	padding-bottom: 10px;
+	margin: 1vw;
 	padding-left: 0;
 	width: 40vw;
   	}
 }
-
-
 
 
 .photo-resto{
@@ -165,7 +250,6 @@ span.number{
 		width: 100%
 	}
 	@include sm{
-		display: flex;
 		width: 100%
 	}
 	@include md {
@@ -246,7 +330,23 @@ i.fas.fa-hands-helping {
 i.fas.fa-arrow-left{
 	@include xs{
 		font-size: 1.2em;
+		top: 2vw;
 	}
+	@include sm{
+		top: 2vw;
+	}
+	@include md {
+    	font-size: 1.5em;
+		top: 2vw;
+  	}
+  	@include lg {
+    	font-size: 2em;
+		top: 1.5vw;
+  	}
+  	@include xl {
+    	font-size: 2em;
+		top: 1.5vw;
+  	}
 	
 }
 
@@ -315,6 +415,7 @@ h1{
 	@include md {
     	width: 30vw;
 		margin: 5px;
+		font-size: 0.82em;
   	}
   	@include lg {
     	width: 30vw;
@@ -448,10 +549,7 @@ img
 	object-fit: cover;
 }
 
-i.fas.fa-arrow-left{
-	top: 2vw;
-	font-size: 1.5em;
-}
+
 
 
 input#pseudo {
@@ -473,7 +571,6 @@ input#pseudo {
 
 .resto{
 	background-color: white;
-	margin: 5vw;
 	border-radius: 15px;
 	box-shadow: 2px 5px 5px 5px $gris-fonce;
 }
@@ -579,7 +676,7 @@ article
 
 span
 {
-	margin-left: 0;
+	margin-left: 5px;
 }
 
 .liste-ul {
@@ -588,36 +685,21 @@ span
 		padding-left: 0;
 		text-align: center;
 	}
-	i {
-		padding-right: 10px;
-	}
 }
 
 i.fas.fa-ellipsis-v {
-	padding-right: 0;
 	font-size: 1em;
-    margin-left: -27px;
-}
-
-i.fas.fa-bars{
-	margin-right: 11px;
-	font-size: 1em;
+   
 }
 
 i.fas.fa-mobile-alt {
     font-size: 1.3em;
-    margin-left: -25px;
-    margin-right: 12px;
+    
 }
 
 i.fas.fa-store {
 	font-size: 1em;
-    margin-left: -25px;
-    margin-right: 12px;
-}
-
-.lili{
-	font-size: 1.1em;
+    
 }
 
 .restaurant {
@@ -678,7 +760,7 @@ i.fas.fa-store {
 .photo-gout img 
 {
 	width: 100%;
-	height: 250px;
+	height: 350px;
 	object-fit: cover;
 }
 
