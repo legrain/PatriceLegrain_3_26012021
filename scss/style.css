@@ -105,7 +105,8 @@ footer {
   line-height: 2;
   box-shadow: 2px 5px 4px #e7e7e7; }
 .liste li:hover {
-  background-color: #f5edff; }
+  background-color: #f5edff;
+  box-shadow: 2px 5px 4px #807f7f; }
   .liste li:hover .fa-mobile-alt, .liste li:hover .fa-store, .liste li:hover .fa-bars, .liste li:hover .fa-ellipsis-v {
     color: #9356DC; }
 
@@ -767,5 +768,30 @@ i.fas.fa-store {
 
 img {
   width: 100%; }
+
+form {
+  width: 100vw; }
+
+fieldset {
+  background-color: #eaeaea;
+  margin: 0; }
+
+legend {
+  font-size: 2em;
+  font-family: 'Shrikhand'; }
+
+label {
+  display: flex;
+  width: 96vw;
+  font-size: 2em;
+  font-family: 'Shrikhand'; }
+
+input {
+  width: 70vw;
+  height: 40px;
+  margin-bottom: 30px; }
+
+input#nom {
+  font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */

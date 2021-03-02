@@ -778,7 +778,38 @@ img
 	width: 100%;
 }
 
+form {
+    width: 100vw;
+}
 
+fieldset {
+	background-color: $gris-fonce;
+	margin: 0;
+}
+
+
+legend {
+    font-size: 2em;
+	font-family: 'Shrikhand';
+}
+
+
+label {
+    display: flex;
+    width: 96vw;
+    font-size: 2em;
+	font-family: 'Shrikhand';
+}
+
+input {
+    width: 70vw;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+input#nom {
+    font-size: 2em;
+}
 
 
 
