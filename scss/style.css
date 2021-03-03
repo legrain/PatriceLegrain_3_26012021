@@ -230,24 +230,20 @@ a {
   text-decoration: none; }
 
 i.fas.fa-heart {
+  color: red;
   display: none;
   font-size: 1.2em; }
 
 i.far.fa-heart {
   font-size: 1.2em;
-  color: black; }
+  color: black;
+  transition: color 1s ease-in-out; }
 
 i.far.fa-heart:hover {
   display: none; }
   i.far.fa-heart:hover + i.fas.fa-heart {
-    display: contents;
-    transform: couleur 5s; }
+    display: contents; }
 
-@keyframes couleur {
-  0% {
-    background-color: white; }
-  100% {
-    background-color: red; } }
 /*Fin de la mise en forme du coeur*/
 /*Media query de la page index*/
 @media screen and (max-width: 599px) {
