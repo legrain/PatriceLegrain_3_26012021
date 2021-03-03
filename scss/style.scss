@@ -835,14 +835,103 @@ label.contacts {
 	font-family: 'Shrikhand';
 }
 
-input.contacts {
-    width: 70vw;
-    height: 40px;
-    margin-bottom: 30px;
+input#prenom {
+	@include xs{
+		width: 70vw;
+    	height: 30px;
+    	font-size: 1em;
+    	margin-bottom: 30px;
+	}
+	@include sm{
+		width: 70vw;
+		height: 30px;
+		font-size: 1.5em;
+		margin-bottom: 30px;
+	}
+	@include md {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
+  	@include lg {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
+  	@include xl {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
 }
 
-input#nom {
-    font-size: 2em;
+input#nom{
+	@include xs{
+		width: 70vw;
+    	height: 30px;
+    	font-size: 1em;
+    	margin-bottom: 30px;
+	}
+	@include sm{
+		width: 70vw;
+		height: 30px;
+		font-size: 1.5em;
+		margin-bottom: 30px;
+	}
+	@include md {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
+  	@include lg {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
+  	@include xl {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
+}
+
+input#email{
+	@include xs{
+		width: 70vw;
+    	height: 30px;
+    	font-size: 1em;
+    	margin-bottom: 30px;
+	}
+	@include sm{
+		width: 70vw;
+		height: 30px;
+		font-size: 1.5em;
+		margin-bottom: 30px;
+	}
+	@include md {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
+  	@include lg {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
+  	@include xl {
+    	width: 70vw;
+		height: 30px;
+		font-size: 2em;
+		margin-bottom: 30px;
+  	}
 }
 
 

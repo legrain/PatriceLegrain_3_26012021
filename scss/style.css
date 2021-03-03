@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* media aliases and breakpoints*/
+/* media devices*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 h1, h2, .logo {
@@ -829,12 +831,97 @@ label.contacts {
   width: 96vw;
   font-family: 'Shrikhand'; }
 
-input.contacts {
-  width: 70vw;
-  height: 40px;
-  margin-bottom: 30px; }
+@media screen and (max-width: 599px) {
+  input#prenom {
+    width: 70vw;
+    height: 30px;
+    font-size: 1em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  input#prenom {
+    width: 70vw;
+    height: 30px;
+    font-size: 1.5em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  input#prenom {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  input#prenom {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 1400px) and (max-width: 5000px) {
+  input#prenom {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
 
-input#nom {
-  font-size: 2em; }
+@media screen and (max-width: 599px) {
+  input#nom {
+    width: 70vw;
+    height: 30px;
+    font-size: 1em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  input#nom {
+    width: 70vw;
+    height: 30px;
+    font-size: 1.5em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  input#nom {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  input#nom {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 1400px) and (max-width: 5000px) {
+  input#nom {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
+
+@media screen and (max-width: 599px) {
+  input#email {
+    width: 70vw;
+    height: 30px;
+    font-size: 1em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  input#email {
+    width: 70vw;
+    height: 30px;
+    font-size: 1.5em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  input#email {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  input#email {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
+@media screen and (min-width: 1400px) and (max-width: 5000px) {
+  input#email {
+    width: 70vw;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
