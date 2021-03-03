@@ -57,13 +57,13 @@ i.fas.fa-check
 @keyframes spin {
 				0% { 
 					transform: rotate(0deg);
-					left: 50%;
+					left: 40%;
 					top: 50%;
 					opacity: 1;
 				}
 				99% { 
 					transform: rotate(360deg);
-					left: 50%;
+					left: 40%;
 					top: 50%;
 					opacity: 1;
 				}
@@ -72,6 +72,28 @@ i.fas.fa-check
 					opacity: 0;
 				}
 
+	}
+
+@include xs{
+		@keyframes spin {
+				0% { 
+					transform: rotate(0deg);
+					left: 25%;
+					top: 50%;
+					opacity: 1;
+				}
+				99% { 
+					transform: rotate(360deg);
+					left: 25%;
+					top: 50%;
+					opacity: 1;
+				}
+				100%{
+					left: 9999px;
+					opacity: 0;
+				}
+
+	}
 	}
 
 .index
@@ -154,9 +176,7 @@ a{
 
 
 i.fas.fa-heart {
-    background-image: linear-gradient(to bottom right,$secondaire ,$primaire);
-	background-clip: text;
-	-webkit-text-fill-color:crimson;
+    
     display: none;
    	font-size: 1.2em;
 }
@@ -171,8 +191,17 @@ i.far.fa-heart:hover{
     display: none;
 			& + i.fas.fa-heart{
         	display:contents;
-			transition: color linear 5s;
+			transform: couleur 5s;
     }
+}
+
+@keyframes couleur{
+	0%{
+		background-color: white;
+	}
+	100%{
+		background-color: red;
+	}
 }
 
 /*Fin de la mise en forme du coeur*/

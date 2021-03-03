@@ -51,9 +51,8 @@ h2.titre-fonc-contenu{
 		display: flex;
   	}
   	@include lg {
-    	width: 27vw;
+    	width: 26vw;
 		display: flex;
-		margin-right: 40px;
   	}
   	@include xl {
     	width: 28vw;
@@ -789,19 +788,54 @@ fieldset {
 
 
 legend {
-    font-size: 2em;
+    
 	font-family: 'Shrikhand';
 }
 
+legend.contacts{
+	@include xs{
+		font-size: 1em;
+	}
+	@include sm{
+		font-size: 1.5em;
+	}
+	@include md {
+    	font-size: 2em;
+  	}
+  	@include lg {
+    	font-size: 2em;
+  	}
+  	@include xl {
+    	
+  	}
+}
 
-label {
+label.contacts{
+	@include xs{
+		font-size: 1em;
+	}
+	@include sm{
+		font-size: 1.5em;
+	}
+	@include md {
+    	font-size: 2em;
+  	}
+  	@include lg {
+    	font-size: 2em;
+  	}
+  	@include xl {
+    	font-size: 2em;
+  	}
+}
+
+
+label.contacts {
     display: flex;
     width: 96vw;
-    font-size: 2em;
 	font-family: 'Shrikhand';
 }
 
-input {
+input.contacts {
     width: 70vw;
     height: 40px;
     margin-bottom: 30px;

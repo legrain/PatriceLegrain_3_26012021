@@ -1,4 +1,4 @@
-// media aliases and breakpoints
+/* media aliases and breakpoints*/
 $screen-sm-min: 600px;
 $screen-md-min: 800px;
 $screen-lg-min: 1024px;
@@ -10,7 +10,7 @@ $screen-md-max: 1023px;
 $screen-lg-max: 1399px;
 $screen-xl-max: 5000px;
 
-// media devices
+/* media devices*/
 @mixin xs {
   @media screen and (max-width: #{$screen-xs-max}) {
     @content;
