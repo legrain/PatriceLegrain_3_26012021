@@ -171,27 +171,34 @@ i.fas.fa-check
 /*Mise en forme du coeur*/
 a{
 	list-style-type: none;
-   	text-decoration: none;
+   text-decoration: none;
+   
 }
 
 
 i.fas.fa-heart{
-    color: red;
-    display: none;
+	background: -webkit-linear-gradient($secondaire,$primaire);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
    	font-size: 1.2em;
+	   position: relative;
+	  
 }
 
 i.far.fa-heart
 {
 	font-size: 1.2em;
 	color: black;
-	transition: color 1s ease-in-out;
+	position:relative;
+	
 }
 
-i.far.fa-heart:hover{
+.far.fa-heart:hover{
     display: none;
-	& + i.fas.fa-heart{
-    display:contents;
+	 span.fas{
+    display:-ms-grid;
+	transition: 2s ease-in-out;
+	
 	
     }
 }

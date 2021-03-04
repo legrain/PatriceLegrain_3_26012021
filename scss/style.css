@@ -230,19 +230,22 @@ a {
   text-decoration: none; }
 
 i.fas.fa-heart {
-  color: red;
-  display: none;
-  font-size: 1.2em; }
+  background: -webkit-linear-gradient(#ff79da, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2em;
+  position: relative; }
 
 i.far.fa-heart {
   font-size: 1.2em;
   color: black;
-  transition: color 1s ease-in-out; }
+  position: relative; }
 
-i.far.fa-heart:hover {
+.far.fa-heart:hover {
   display: none; }
-  i.far.fa-heart:hover + i.fas.fa-heart {
-    display: contents; }
+  .far.fa-heart:hover span.fas {
+    display: -ms-grid;
+    transition: 2s ease-in-out; }
 
 /*Fin de la mise en forme du coeur*/
 /*Media query de la page index*/
