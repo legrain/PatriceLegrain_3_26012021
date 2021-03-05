@@ -229,35 +229,17 @@ a {
   list-style-type: none;
   text-decoration: none; }
 
-i.fas.fa-heart {
-  background: -webkit-linear-gradient(#ff79da, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.2em;
-  position: relative; }
-
 i.far.fa-heart {
-  font-size: 1.2em;
-  position: relative; }
-
-.far.fa-heart:hover {
-  display: none; }
-  .far.fa-heart:hover i.fas.fa-heart {
-    display: contents;
-    transition: 2s ease-in-out;
-    opacity: 1; }
-
-.heart-empty {
-  font-size: 1.2em;
+  font-size: 1.4em;
   position: absolute;
-  left: 80vw; }
+  margin-top: 20px; }
 
-.heart-full {
+i.fas.fa-heart {
   opacity: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   position: absolute;
-  left: 80vw; }
-  .heart-full:hover {
+  margin-top: 20px; }
+  i.fas.fa-heart:hover {
     transform-origin: bottom center;
     opacity: 1;
     z-index: 1000;
@@ -267,14 +249,6 @@ i.far.fa-heart {
     -webkit-text-fill-color: transparent;
     transition: 2s ease-in-out; }
 
-.heart {
-  display: flex; }
-
-@keyframes coeur {
-  0% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1); } }
 /*Fin de la mise en forme du coeur*/
 /*Media query de la page index*/
 @media screen and (max-width: 599px) {
