@@ -238,15 +238,43 @@ i.fas.fa-heart {
 
 i.far.fa-heart {
   font-size: 1.2em;
-  color: black;
   position: relative; }
 
 .far.fa-heart:hover {
   display: none; }
-  .far.fa-heart:hover span.fas {
-    display: -ms-grid;
+  .far.fa-heart:hover i.fas.fa-heart {
+    display: contents;
+    transition: 2s ease-in-out;
+    opacity: 1; }
+
+.heart-empty {
+  font-size: 1.2em;
+  position: absolute;
+  left: 80vw; }
+
+.heart-full {
+  opacity: 0;
+  font-size: 1.2em;
+  position: absolute;
+  left: 80vw; }
+  .heart-full:hover {
+    transform-origin: bottom center;
+    opacity: 1;
+    z-index: 1000;
+    background: linear-gradient(to left, #9356DC, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356DC, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s ease-in-out; }
 
+.heart {
+  display: flex; }
+
+@keyframes coeur {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 /*Fin de la mise en forme du coeur*/
 /*Media query de la page index*/
 @media screen and (max-width: 599px) {
