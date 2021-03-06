@@ -240,7 +240,7 @@ i.fas.fa-heart {
   position: absolute;
   margin-top: 20px; }
   i.fas.fa-heart:hover {
-    transform-origin: bottom center;
+    transform-origin: bottom top;
     opacity: 1;
     z-index: 1000;
     background: linear-gradient(to left, #9356DC, #ff79da);
