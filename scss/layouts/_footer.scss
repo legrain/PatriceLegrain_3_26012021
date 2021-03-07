@@ -19,10 +19,16 @@ footer {
 .logo-footer {
 	img {
 		filter: invert(6);
-		width: 40%;
+		width: 30%;
 		padding-left: 40px;
 		padding-top: 20px;
 		margin-left: -20px;
+	}
+}
+
+.logo-footer{
+	@include xs{
+		width: 40%;
 	}
 }
 
