@@ -69,14 +69,10 @@ footer {
 
 .logo-footer img {
   filter: invert(6);
-  width: 30%;
+  width: 40%;
   padding-left: 40px;
   padding-top: 20px;
   margin-left: -20px; }
-
-@media screen and (max-width: 599px) {
-  .logo-footer {
-    width: 40%; } }
 
 .footer-ul {
   margin-left: -20px; }
