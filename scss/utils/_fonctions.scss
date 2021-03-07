@@ -54,25 +54,7 @@ i.fas.fa-check
 
 /*Mise en place du loader avec son fond*/
 
-@keyframes spin {
-				0% { 
-					transform: rotate(0deg);
-					left: 40%;
-					top: 50%;
-					opacity: 1;
-				}
-				99% { 
-					transform: rotate(360deg);
-					left: 40%;
-					top: 50%;
-					opacity: 1;
-				}
-				100%{
-					left: 9999px;
-					opacity: 0;
-				}
 
-	}
 
 @include xs{
 		@keyframes spin {
@@ -94,7 +76,27 @@ i.fas.fa-check
 				}
 
 	}
-	}
+}
+
+@keyframes spin {
+				0% { 
+					transform: rotate(0deg);
+					left: 40%;
+					top: 50%;
+					opacity: 1;
+				}
+				99% { 
+					transform: rotate(360deg);
+					left: 40%;
+					top: 50%;
+					opacity: 1;
+				}
+				100%{
+					left: 9999px;
+					opacity: 0;
+				}
+
+}
 
 .index
 {
@@ -187,7 +189,7 @@ i.fas.fa-heart{
 	position: absolute;
 	margin-top: 20px;
 			&:hover{
-				transform-origin: bottom top;
+				transform-origin: bottom right;
 			opacity: 1;
 			z-index: 1000;
 			background:linear-gradient(to left,$primaire,$secondaire);
