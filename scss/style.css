@@ -46,7 +46,7 @@ h1.titre-fonc-contenu {
   width: 90%; }
 
 .logo-image img {
-  width: 30%;
+  width: 40%;
   margin-top: 5px; }
 
 footer {
@@ -65,7 +65,7 @@ footer {
 
 .logo-footer img {
   filter: invert(6);
-  width: 30%;
+  width: 40%;
   padding-left: 40px;
   padding-top: 20px;
   margin-left: -20px; }
@@ -152,12 +152,12 @@ i.fas.fa-check {
   @keyframes spin {
     0% {
       transform: rotate(0deg);
-      left: 25%;
+      left: 40%;
       top: 50%;
       opacity: 1; }
     99% {
       transform: rotate(360deg);
-      left: 25%;
+      left: 40%;
       top: 50%;
       opacity: 1; }
     100% {
@@ -166,12 +166,12 @@ i.fas.fa-check {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    left: 40%;
+    left: 30%;
     top: 50%;
     opacity: 1; }
   99% {
     transform: rotate(360deg);
-    left: 40%;
+    left: 30%;
     top: 50%;
     opacity: 1; }
   100% {
