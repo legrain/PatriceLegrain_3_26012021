@@ -1,25 +1,800 @@
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
+@import "./../media-query.scss";
 
-#container
+@import "./base/formats.scss";
+@import "./base/police.scss";
+
+
+@import "./components/boutons.scss";
+
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./utils/fonctions.scss";
+
+/*Media query de la page index*/
+
+h2.titre-fonc-contenu{
+	@include xs{
+		padding-left: 10px;
+	}
+	@include sm{
+		text-align: center;
+		font-size: 1.9em;
+	}
+	@include md {
+    	text-align: center;
+  	}
+  	@include lg {
+    	text-align: center;
+  	}
+  	@include xl {
+    	text-align: center;
+  	}
+
+}
+
+.liste .phone, .liste .bars, .liste .store{
+	@include xs{
+		margin-bottom: 20px;
+		width: 75vw;
+	}
+	@include sm{
+		width: 80vw;
+		line-height: 1.2;
+		margin-left: 35px;
+		margin-bottom: 20px;
+	}
+	@include md {
+    	width: 25vw;
+		display: flex;
+  	}
+  	@include lg {
+    	width: 26vw;
+		display: flex;
+  	}
+  	@include xl {
+    	width: 28vw;
+		display: flex;
+  	}
+}
+
+.liste-ul ul{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	display: flex;
+  	}
+  	@include lg {
+    	display: flex;
+  	}
+  	@include xl {
+    	display: flex;
+  	}
+}
+
+.liste-ul i{
+	@include xs{
+		padding-right: 10px;
+	}
+	@include sm{
+		padding-right: 10px;
+	}
+	@include md {
+    	line-height: 2;
+  	}
+  	@include lg {
+    	line-height: 2;
+  	}
+  	@include xl {
+    	line-height: 2;
+  	}
+}
+
+
+
+span.number{
+	@include xs{
+	margin-right: 15vw;
+	line-height: 2;
+	}
+	@include sm{
+	margin-right: 25vw;
+	line-height: 2;
+	}
+	@include md {
+	margin-right: 2vw;
+    padding-left: 10px;
+	line-height: 2;
+	}
+  	@include lg {
+    margin-right: 2vw;
+    padding-left: 10px;
+	line-height: 2;
+  	}
+  	@include xl {
+    margin-right: 4vw;
+    padding-left: 10px;
+	line-height: 2;	
+  	}
+}
+
+.lili{
+	@include xs{
+		font-size: 1.1em;
+	}
+	@include sm{
+		font-size: 1.1em;
+	}
+	@include md {
+    	
+		
+  	}
+  	@include lg {
+    	
+		
+  	}
+  	@include xl {
+    	
+		
+  	}
+}
+
+.fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store{
+	@include xs{
+		    margin-left: -25px;
+    		margin-right: 12px;
+	}
+	@include sm{
+		    margin-left: -25px;
+    margin-right: 12px;
+	}
+	@include md {
+    	margin: 0;
+		
+  	}
+  	@include lg {
+    	margin: 0;
+		
+  	}
+  	@include xl {
+    	margin: 0;
+		
+  	}
+}
+
+.fa-mobile-alt, .fa-bars, .fa-store{
+	@include xs{
+		    
+	}
+	@include sm{
+		    
+	}
+	@include md {
+    	
+  	}
+  	@include lg {
+    	margin-right: 20px;
+  	}
+  	@include xl {
+    	margin-right: 20px;
+  	}
+}
+
+i.fas.fa-mobile-alt{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	line-height: 1.5;
+		
+  	}
+  	@include lg {
+    	line-height: 1.5;
+		
+  	}
+  	@include xl {
+    	line-height: 1.5;
+		
+  	}
+}
+
+
+
+.resto{
+	@include xs{
+	margin: 5vw;
+	width: 90vw;
+	padding-bottom: 10px;
+	padding-left: 0;
+	}
+	@include sm{
+	margin: 5vw;
+	padding-bottom: 10px;
+	padding-left: 0;
+	width: 90vw;
+	}
+	@include md {
+	padding-bottom: 10px;
+	margin: 1vw;
+	padding-left: 0;
+	width: 40vw;
+  	}
+  	@include lg {
+	padding-bottom: 10px;
+	margin: 1vw;
+	padding-left: 0;
+	width: 40vw;
+  	}
+  	@include xl {
+	padding-bottom: 10px;
+	margin: 1vw;
+	padding-left: 0;
+	width: 40vw;
+  	}
+}
+
+
+.photo-resto{
+	@include xs{
+		display: inline-block;
+		width: 100%
+	}
+	@include sm{
+		width: 100%
+	}
+	@include md {
+    	display: flex;
+		
+  	}
+  	@include lg {
+    	display: flex;
+		
+  	}
+  	@include xl {
+    	display: flex;
+		
+  	}
+}
+
+footer ul{
+	margin-bottom: 0;
+}
+
+footer ul {
+	@include xs{
+		
+	}
+	@include sm{
+		display: flex;
+	}
+	@include md {
+    	display: flex;
+  	}
+  	@include lg {
+    	display: flex;
+  	}
+  	@include xl {
+    	display: flex;
+  	}
+    
+}
+
+footer li{
+	@include xs{
+		
+	}
+	@include sm{
+		margin-right: 15px;
+		font-size: 1.2em;
+	}
+	@include md {
+    	margin-right: 30px;
+		font-size: 1.2em;
+  	}
+  	@include lg {
+    	margin-right: 30px;
+		font-size: 1.5rem;
+  	}
+  	@include xl {
+    	margin-right: 30px;
+		font-size: 1.9rem;
+  	}
+}
+
+i.fas.fa-utensils{
+	@include xs{
+		margin-right: 17px;
+	}
+}
+
+i.fas.fa-hands-helping {
+	@include xs{
+		margin-right: 10px;
+	}
+}
+
+/*Fin du media query de la page index*/
+
+/*Media query des pages restaurant"*/
+
+i.fas.fa-arrow-left{
+	@include xs{
+		font-size: 1.2em;
+		top: 2vw;
+	}
+	@include sm{
+		top: 2vw;
+	}
+	@include md {
+    	font-size: 1.5em;
+		top: 2vw;
+  	}
+  	@include lg {
+    	font-size: 2em;
+		top: 1.5vw;
+  	}
+  	@include xl {
+    	font-size: 2em;
+		top: 1.5vw;
+  	}
+	
+}
+
+h1{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	
+  	}
+  	@include lg {
+    	font-size: 2em;
+  	}
+  	@include xl {
+    	font-size: 2em;
+  	}
+}
+
+.gourmand{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	display: flex;
+  	}
+  	@include lg {
+    	display: flex;
+  	}
+  	@include xl {
+    	display: flex;
+  	}
+}
+
+.gourmand2{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	display: inline-block;
+  	}
+  	@include lg {
+    	display: inline-block;
+  	}
+  	@include xl {
+    	display: inline-block;
+  	}
+}
+
+.menu{
+	@include xs{
+		margin: 10px;
+	}
+	@include sm{
+		
+		margin: 5px;
+	}
+	@include md {
+    	width: 30vw;
+		margin: 5px;
+		font-size: 0.82em;
+  	}
+  	@include lg {
+    	width: 30vw;
+		margin: 5px;
+  	}
+  	@include xl {
+    	width: 30vw;
+		margin: 5px;
+		margin-left: 1vw;
+  	}
+}
+
+.gourmand-titre {
+	@include xs{
+		margin-left: 15px;
+	}
+	@include sm{
+		margin-left: 15px;
+	}
+	@include md {
+    	margin-left: 15px;
+  	}
+  	@include lg {
+    	margin-left: 30px;
+  	}
+  	@include xl {
+    	margin-left: 40px;
+  	}
+}
+.menu2{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	margin-top: 23px;
+  	}
+  	@include lg {
+    	margin-top: 23px;
+  	}
+  	@include xl {
+    	margin-top: 30px;
+  	}
+}
+
+.menu-contenu{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	
+  	}
+  	@include lg {
+    	
+  	}
+  	@include xl {
+    	font-size: 1.4em;
+  	}
+}
+
+h3.gourmand-titre{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	font-size: 1.4em;
+  	}
+  	@include lg {
+    	font-size: 1.4em;
+  	}
+  	@include xl {
+    	font-size: 1.4em;
+  	}
+}
+
+/*Fin du media query des pages des restaurants*/
+
+.menu2{
+	margin-top: 20px;
+}
+
+body
 {
-    font-family: Roboto, sans-serif;
-    width: 100%;
+	margin: 0;
+}
+
+.text-emballage 
+{
+    padding-bottom: 20px;
+}
+
+span.number{
+	margin-left: -34px;
+	padding-left: 10px;
+	display: flex;
+	background: $primaire;
+	border-radius: 50%;
+	color:white;
+	width: 20px;
+}
+
+.fa-mobile-alt, .fa-ellipsis-v, .fa-bars, .fa-store{
+	color:rgb(145, 141, 141);
+}
+
+.photo-resto p
+{
+		margin: 0;
+		color: black;
+}
+
+.photo-resto{
+	position: relative;
+}
+
+header
+{
+	width: 100vw;
 }
 
 img
 {
-    width: 20px;
-    height: 20px;
+	object-fit: cover;
 }
 
-.photo-gout
+
+
+
+input#pseudo {
+    border: none;
+    text-align: center;
+    background-color: #eaeaea;
+}
+
+
+.photo-emballage h2 {
+    margin-left: 20px;
+}
+
+.contenu-resto h3
 {
-    width: 20px;
+	width: 85%;
+	color: black;
 }
 
-body{
-    color: white;
-    background-color: black;
+.resto{
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 2px 5px 5px 5px $gris-fonce;
 }
+
+h3.gourmand-titre {
+	    position: relative;
+		padding-bottom: 5px;
+		margin-bottom: 10px;
+}
+
+h3.gourmand-titre:after{
+	    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    right: 50%;
+    border-bottom: 2px solid $tertiaire;
+}
+
+.button-explorer a {
+		background: linear-gradient(to bottom right,$secondaire ,$primaire);
+		padding: 10px;
+		border-radius: 30px;
+		text-decoration: none;
+		color: white;
+		box-shadow: 1px 3px rgb(145, 141, 141);
+}
+
+.bouton a
+{
+	background: linear-gradient(to bottom right,$secondaire,$primaire);
+	justify-content: center;
+	padding: 10px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: white;
+	box-shadow: 1px 3px #918d8d;
+	line-height: 5;
+	
+}
+
+.cont-page
+{
+	background-color: rgb(236, 233, 233);
+	margin-top: -40px;
+	border-radius: 30px 30px 0 0;
+	padding-top: 20px;
+	position: relative;
+}
+
+.formulaire {
+	background-color: $gris-fonce;
+	border-top: 2px solid #d3d3d3;
+	padding: 15px 0 15px 0;
+	text-align: center;
+}
+
+.text {
+	background-color: $gris-claire;
+	text-align: center;
+	h2 {
+		margin: 0;
+		text-align: center;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.menu-contenu
+{
+	width: 100%;
+	overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+	
+article
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.piment
+{
+	margin-top: 0;
+	overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+	position:initial ;
+	font-weight: bold;
+	color: black;
+}
+
+.price
+{
+  align-self:flex-end;
+  margin-right: 10px;
+  font-family: none;
+}
+
+span
+{
+	margin-left: 5px;
+}
+
+.liste-ul {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		text-align: center;
+	}
+}
+
+i.fas.fa-ellipsis-v {
+	font-size: 1em;
+   
+}
+
+i.fas.fa-mobile-alt {
+    font-size: 1.3em;
+    
+}
+
+i.fas.fa-store {
+	font-size: 1em;
+    
+}
+
+.restaurant {
+	background-color: $gris-claire;
+	padding-bottom: 10px;
+	width: 100vw;
+}
+
+
+.contenu-resto {
+	padding-left: 10px;
+}
+
+.photo-resto img {
+	 	border-radius: 15px 15px 0 0;
+		height: 200px;
+	}
+	
+	
+
+.nouveau p {
+		background: $tertiaire;
+		font-family: none;
+		color: #088f6d;
+		height: 20px;
+		padding: 5px;
+		position: absolute;
+		top: 10%;
+		right: 2%;
+		line-height: 1.2;
+	}
+
+.photo-emballage
+{
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.fa-arrow-left{
+	width: 10%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+    z-index: 1;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    line-height: 2;
+    color: black;
+}
+
+.photo-gout {
+	img {
+		width: 100%;
+	}
+}
+
+.photo-gout img 
+{
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+}
+
+.menu
+{
+	background-color: white;
+	border-radius: 20px;
+	padding-left: 5px;
+	box-shadow: 2px 5px 5px 2px #d2c8c8;
+	margin-bottom: 10px;
+}
+
+img
+{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,29 @@
+h1,h2, .logo
+{
+	color: #000;
+	font-family: 'Shrikhand';
+}
+
+h3 
+{
+	display: -webkit-inline-box;
+	font-size: 1.05em;
+	margin-bottom: 0;
+	overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+h1
+{
+	display: -webkit-inline-box;
+	font-size: 1.4em;
+	width: 80vw;
+	padding-left: 20px;
+	color: #101010;
+}
+
+h1.titre-fonc-contenu {
+    font-family: none;
+	font-size: 1.5em;
+}

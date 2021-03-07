@@ -1,0 +1,31 @@
+footer {
+	margin: 0;
+	width: 100vw;
+	background-color: #353535;
+	li {
+		margin-bottom: 10px;	
+	a {
+			color: white;
+			text-decoration: none;
+		}
+		color: white;
+		list-style: none;
+	}
+	ul {
+		padding-bottom: 20px;
+	}
+}
+
+.logo-footer {
+	img {
+		filter: invert(6);
+		width: 30%;
+		padding-left: 40px;
+		padding-top: 20px;
+		margin-left: -20px;
+	}
+}
+
+.footer-ul {
+    margin-left: -20px;
+}
