@@ -247,7 +247,7 @@ i.fas.fa-heart {
     background: -webkit-linear-gradient(to left, #9356DC, #ff79da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 2s ease-in-out; }
+    transition: 1s ease-in-out; }
 
 /*Fin de la mise en forme du coeur*/
 /*Media query de la page index*/
