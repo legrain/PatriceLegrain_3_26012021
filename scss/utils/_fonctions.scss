@@ -60,13 +60,13 @@ i.fas.fa-check
 		@keyframes spin {
 				0% { 
 					transform: rotate(0deg);
-					left: 40%;
+					left: 30%;
 					top: 50%;
 					opacity: 1;
 				}
 				99% { 
 					transform: rotate(360deg);
-					left: 40%;
+					left: 30%;
 					top: 50%;
 					opacity: 1;
 				}
@@ -101,7 +101,7 @@ i.fas.fa-check
 .index
 {
 	width:100vw;
-	animation: disparition 4s forwards;
+	animation: disparition 10s forwards;
 	opacity:0;
 			#loader {
 				width: 100px;
@@ -109,7 +109,7 @@ i.fas.fa-check
 				border: 20px solid #CCCCCC;
 				border-top: 20px solid #1177FF;
 				border-radius: 50%;
-				animation: spin 4s ease-in-out forwards;
+				animation: spin 10s ease-in-out forwards;
 	  	  		position:fixed;
 		        }
             @keyframes disparition{
