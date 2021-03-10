@@ -101,7 +101,7 @@ i.fas.fa-check
 .index
 {
 	width:100vw;
-	animation: disparition 10s forwards;
+	animation: disparition 3s forwards;
 	opacity:0;
 			#loader {
 				width: 100px;
@@ -109,7 +109,7 @@ i.fas.fa-check
 				border: 20px solid #CCCCCC;
 				border-top: 20px solid #1177FF;
 				border-radius: 50%;
-				animation: spin 10s ease-in-out forwards;
+				animation: spin 3s ease-in-out forwards;
 	  	  		position:fixed;
 		        }
             @keyframes disparition{
