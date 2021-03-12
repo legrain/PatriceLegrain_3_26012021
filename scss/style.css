@@ -148,21 +148,27 @@ i.fas.fa-check {
 
 /*Fin de la mise en place de la barre avec le check qui tourne pour validé les menu*/
 /*Mise en place du loader avec son fond*/
-@media screen and (max-width: 599px) {
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      left: 30%;
-      top: 50%;
-      opacity: 1; }
-    99% {
-      transform: rotate(360deg);
-      left: 30%;
-      top: 50%;
-      opacity: 1; }
-    100% {
-      left: 9999px;
-      opacity: 0; } } }
+/*@include xs{
+		@keyframes spin {
+				0% { 
+					transform: rotate(0deg);
+					left: 30%;
+					top: 50%;
+					opacity: 1;
+				}
+				99% { 
+					transform: rotate(360deg);
+					left: 30%;
+					top: 50%;
+					opacity: 1;
+				}
+				100%{
+					left: 9999px;
+					opacity: 0;
+				}
+
+	}
+}*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -179,7 +185,10 @@ i.fas.fa-check {
     opacity: 0; } }
 .index {
   width: 100vw;
-  animation: disparition 10s forwards;
+  animation: disparition 5s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0; }
   .index #loader {
     width: 100px;
@@ -187,7 +196,7 @@ i.fas.fa-check {
     border: 20px solid #CCCCCC;
     border-top: 20px solid #1177FF;
     border-radius: 50%;
-    animation: spin 10s ease-in-out forwards;
+    animation: spin 5s ease-in-out forwards;
     position: fixed; }
 @keyframes disparition {
   0% {

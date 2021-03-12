@@ -56,7 +56,7 @@ i.fas.fa-check
 
 
 
-@include xs{
+/*@include xs{
 		@keyframes spin {
 				0% { 
 					transform: rotate(0deg);
@@ -76,7 +76,7 @@ i.fas.fa-check
 				}
 
 	}
-}
+}*/
 
 @keyframes spin {
 				0% { 
@@ -101,7 +101,10 @@ i.fas.fa-check
 .index
 {
 	width:100vw;
-	animation: disparition 3s forwards;
+	animation: disparition 5s forwards;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 	opacity:0;
 			#loader {
 				width: 100px;
@@ -109,7 +112,7 @@ i.fas.fa-check
 				border: 20px solid #CCCCCC;
 				border-top: 20px solid #1177FF;
 				border-radius: 50%;
-				animation: spin 3s ease-in-out forwards;
+				animation: spin 5s ease-in-out forwards;
 	  	  		position:fixed;
 		        }
             @keyframes disparition{
