@@ -56,28 +56,6 @@ i.fas.fa-check
 
 
 
-/*@include xs{
-		@keyframes spin {
-				0% { 
-					transform: rotate(0deg);
-					left: 30%;
-					top: 50%;
-					opacity: 1;
-				}
-				99% { 
-					transform: rotate(360deg);
-					left: 30%;
-					top: 50%;
-					opacity: 1;
-				}
-				100%{
-					left: 9999px;
-					opacity: 0;
-				}
-
-	}
-}*/
-
 @keyframes spin {
 				0% { 
 					transform: rotate(0deg);

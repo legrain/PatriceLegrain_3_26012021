@@ -148,27 +148,6 @@ i.fas.fa-check {
 
 /*Fin de la mise en place de la barre avec le check qui tourne pour validé les menu*/
 /*Mise en place du loader avec son fond*/
-/*@include xs{
-		@keyframes spin {
-				0% { 
-					transform: rotate(0deg);
-					left: 30%;
-					top: 50%;
-					opacity: 1;
-				}
-				99% { 
-					transform: rotate(360deg);
-					left: 30%;
-					top: 50%;
-					opacity: 1;
-				}
-				100%{
-					left: 9999px;
-					opacity: 0;
-				}
-
-	}
-}*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
