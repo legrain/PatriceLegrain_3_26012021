@@ -592,6 +592,22 @@ footer ul {
     font-size: 1.4em; } }
 
 @media screen and (max-width: 599px) {
+  .logo-image img {
+    width: 40vw; } }
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .logo-image img {
+    width: 30vw; } }
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .logo-image img {
+    width: 25vw; } }
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .logo-image img {
+    width: 20vw; } }
+@media screen and (min-width: 1400px) and (max-width: 5000px) {
+  .logo-image img {
+    width: 20vw; } }
+
+@media screen and (max-width: 599px) {
   .logo-footer img {
     width: 40vw; } }
 @media screen and (min-width: 600px) and (max-width: 799px) {
