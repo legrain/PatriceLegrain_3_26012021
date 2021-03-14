@@ -535,12 +535,6 @@ footer ul {
   .gourmand-titre {
     margin-left: 40px; } }
 
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .menu2 {
-    margin-top: 23px; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .menu2 {
-    margin-top: 23px; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .menu2 {
     margin-top: 23px; } }
@@ -590,6 +584,9 @@ header {
 
 img {
   object-fit: cover; }
+
+.menu2 h3 {
+  display: none; }
 
 input#pseudo {
   border: none;

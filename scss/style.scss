@@ -452,10 +452,10 @@ h1{
 		
 	}
 	@include md {
-    	margin-top: 23px;
+    	
   	}
   	@include lg {
-    	margin-top: 23px;
+    	
   	}
   	@include xl {
     	margin-top: 23px;
@@ -545,7 +545,9 @@ img
 	object-fit: cover;
 }
 
-
+.menu2 h3{
+	display: none;
+}
 
 
 input#pseudo {
