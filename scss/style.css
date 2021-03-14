@@ -151,22 +151,19 @@ i.fas.fa-check {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    left: 40%;
-    top: 50%;
+    top: 40%;
     opacity: 1; }
   99% {
     transform: rotate(360deg);
-    left: 40%;
-    top: 50%;
+    top: 40%;
     opacity: 1; }
   100% {
     left: 9999px;
     opacity: 0; } }
 .index {
   width: 100vw;
-  animation: disparition 5s forwards;
+  animation: disparition 3s forwards;
   display: flex;
-  align-items: center;
   justify-content: center;
   opacity: 0; }
   .index #loader {
@@ -175,25 +172,17 @@ i.fas.fa-check {
     border: 20px solid #CCCCCC;
     border-top: 20px solid #1177FF;
     border-radius: 50%;
-    animation: spin 5s ease-in-out forwards;
+    animation: spin 3s ease-in-out forwards;
     position: fixed; }
 @keyframes disparition {
   0% {
     opacity: 1;
     background-color: white;
-    height: 600vh; }
-  25% {
-    opacity: 1;
-    background-color: white;
-    height: 600vh; }
-  50% {
-    opacity: 1;
-    background-color: white;
-    height: 600vh; }
+    height: 700vh; }
   99% {
     opacity: 1;
     background-color: white;
-    height: 600vh; }
+    height: 700vh; }
   100% {
     opacity: 0; } }
 .enveloppe {
