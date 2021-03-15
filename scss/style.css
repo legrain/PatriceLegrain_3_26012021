@@ -245,6 +245,21 @@ i.fas.fa-heart {
 /*Fin de la mise en forme du coeur*/
 /*Media query de la page index*/
 @media screen and (max-width: 599px) {
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      left: 30%;
+      top: 50%;
+      opacity: 1; }
+    99% {
+      transform: rotate(360deg);
+      left: 30%;
+      top: 50%;
+      opacity: 1; }
+    100% {
+      left: 9999px;
+      opacity: 0; } } }
+@media screen and (max-width: 599px) {
   h2.titre-fonc-contenu {
     padding-left: 10px; } }
 @media screen and (min-width: 600px) and (max-width: 799px) {
