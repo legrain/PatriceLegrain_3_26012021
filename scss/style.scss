@@ -519,6 +519,42 @@ h3.gourmand-titre{
   	}
 }
 
+.logo-image img {
+	@include xs{
+		width: 40vw;
+	}
+	@include sm{
+		width: 30vw;
+	}
+	@include md {
+    	width: 25vw;
+	}
+  	@include lg {
+    	width: 20vw;
+	}
+  	@include xl {
+    	width: 20vw;
+	}
+}
+
+.logo-footer img {
+	@include xs{
+		width: 40vw;
+	}
+	@include sm{
+		width: 30vw;
+	}
+	@include md {
+    	width: 25vw;
+	}
+  	@include lg {
+    	width: 20vw;
+	}
+  	@include xl {
+    	width: 20vw;
+	}
+}
+
 /*Fin du media query des pages des restaurants*/
 
 
