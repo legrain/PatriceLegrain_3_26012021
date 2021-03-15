@@ -360,12 +360,14 @@ i.fas.fa-arrow-left{
 		top: 2vw;
   	}
   	@include lg {
-    	font-size: 2em;
+    	font-size: 1.6em;
 		top: 1.5vw;
+		line-height: 0.5;
   	}
   	@include xl {
-    	font-size: 2em;
+    	font-size: 2rem;
 		top: 1.5vw;
+		line-height: 0.5;
   	}
 	
 }

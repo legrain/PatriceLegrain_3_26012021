@@ -480,12 +480,14 @@ footer ul {
     top: 2vw; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   i.fas.fa-arrow-left {
-    font-size: 2em;
-    top: 1.5vw; } }
+    font-size: 1.6em;
+    top: 1.5vw;
+    line-height: 0.5; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   i.fas.fa-arrow-left {
-    font-size: 2em;
-    top: 1.5vw; } }
+    font-size: 2rem;
+    top: 1.5vw;
+    line-height: 0.5; } }
 
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   h1 {
