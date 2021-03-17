@@ -20,13 +20,13 @@
 				0% { 
 					transform: rotate(0deg);
 					left: 30%;
-					top: 50%;
+					top: 40%;
 					opacity: 1;
 				}
 				99% { 
 					transform: rotate(360deg);
 					left: 30%;
-					top: 50%;
+					top: 40%;
 					opacity: 1;
 				}
 				100%{
@@ -38,11 +38,11 @@
 
 h2.titre-fonc-contenu{
 	@include xs{
-		padding-left: 10px;
+		padding-left: 20px;
 	}
 	@include sm{
-		text-align: center;
-		font-size: 1.9em;
+		padding-left: 30px;
+		font-size: 1.5em;
 	}
 	@include md {
     	text-align: center;
@@ -147,7 +147,7 @@ span.number{
 
 .lili{
 	@include xs{
-		font-size: 1.1em;
+		font-size: 0.95em;
 	}
 	@include sm{
 		font-size: 1.1em;
@@ -557,6 +557,30 @@ h3.gourmand-titre{
 	}
 }
 
+.bouton a{
+	@include xs{
+		padding: 10px 40px;
+		line-height: 5;
+	}
+	@include sm{
+		padding: 10px 40px;
+		line-height: 5;
+	}
+	@include md {
+    	padding: 20px 60px;
+		line-height: 6;
+	}
+  	@include lg {
+    	padding: 20px 60px;
+		line-height: 8;
+	}
+  	@include xl {
+    	padding: 30px 80px;
+		line-height: 10;
+		font-size: 1.4em;
+	}
+}
+
 /*Fin du media query des pages des restaurants*/
 
 
@@ -613,6 +637,7 @@ input#pseudo {
     border: none;
     text-align: center;
     background-color: #eaeaea;
+	width: 35%;
 }
 
 
@@ -638,7 +663,11 @@ h3.gourmand-titre {
 		margin-bottom: 10px;
 }
 
-h3.gourmand-titre:after{
+.lili{
+	font-family: 'Roboto', sans-serif;
+}
+
+.gourmand-titre:after{
 	    content: "";
     position: absolute;
     width: 50%;
@@ -652,6 +681,7 @@ h3.gourmand-titre:after{
 		background: linear-gradient(to bottom right,$secondaire ,$primaire);
 		padding: 10px;
 		border-radius: 30px;
+		font-family: 'Roboto', sans-serif;
 		text-decoration: none;
 		color: white;
 		box-shadow: 1px 3px rgb(145, 141, 141);
@@ -661,13 +691,12 @@ h3.gourmand-titre:after{
 {
 	background: linear-gradient(to bottom right,$secondaire,$primaire);
 	justify-content: center;
-	padding: 10px;
 	border-radius: 30px;
 	text-decoration: none;
 	color: white;
 	box-shadow: 1px 3px #918d8d;
-	line-height: 5;
 	
+	font-family: 'Roboto', sans-serif;
 }
 
 .cont-page
@@ -690,8 +719,10 @@ h3.gourmand-titre:after{
 	background-color: $gris-claire;
 	text-align: center;
 	h2 {
-		margin: 0;
 		text-align: center;
+		width: 80%;
+		padding-top: 30px;
+		margin: 0 10vw;
 	}
 	p {
 		margin-bottom: 0;
@@ -721,8 +752,6 @@ article
   font-size: 0.9em;
 	font-family: 'Roboto', sans-serif;
 	position:initial ;
-	font-weight: bold;
-	color: black;
 }
 
 .price
@@ -730,6 +759,7 @@ article
   align-self:flex-end;
   margin-right: 10px;
   font-family: none;
+  font-weight: bold;
 }
 
 span
@@ -781,6 +811,7 @@ i.fas.fa-store {
 .nouveau p {
 		background: $tertiaire;
 		font-family: none;
+		border-radius: 2px;
 		color: #088f6d;
 		height: 20px;
 		padding: 5px;
