@@ -450,6 +450,24 @@ h1{
   	}
 }
 
+.price{
+	@include xs{
+		
+	}
+	@include sm{
+		
+	}
+	@include md {
+    	
+  	}
+  	@include lg {
+    	
+  	}
+  	@include xl {
+    	font-size: 1.4em;
+  	}
+}
+
 .gourmand-titre {
 	@include xs{
 		margin-left: 15px;

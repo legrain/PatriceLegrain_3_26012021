@@ -546,6 +546,10 @@ footer ul {
     margin: 5px;
     margin-left: 1vw; } }
 
+@media screen and (min-width: 1400px) and (max-width: 5000px) {
+  .price {
+    font-size: 1.4em; } }
+
 @media screen and (max-width: 599px) {
   .gourmand-titre {
     margin-left: 15px; } }
