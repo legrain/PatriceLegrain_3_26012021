@@ -530,7 +530,7 @@ footer ul {
     margin: 10px; } }
 @media screen and (min-width: 600px) and (max-width: 799px) {
   .menu {
-    margin: 5px; } }
+    margin: 25px; } }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   .menu {
     width: 30vw;
@@ -554,13 +554,16 @@ footer ul {
     margin-left: 15px; } }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   .gourmand-titre {
-    margin-left: 15px; } }
+    margin-left: 15px;
+    font-size: 1.4em; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   .gourmand-titre {
-    margin-left: 30px; } }
+    margin-left: 30px;
+    font-size: 1.4em; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .gourmand-titre {
-    margin-left: 40px; } }
+    margin-left: 40px;
+    font-size: 1.4em; } }
 
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .menu2 {
@@ -568,16 +571,6 @@ footer ul {
 
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .menu-contenu {
-    font-size: 1.4em; } }
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  h3.gourmand-titre {
-    font-size: 1.4em; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  h3.gourmand-titre {
-    font-size: 1.4em; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  h3.gourmand-titre {
     font-size: 1.4em; } }
 
 @media screen and (max-width: 599px) {
