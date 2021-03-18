@@ -214,6 +214,7 @@ i.fas.fa-check {
 /*Mise en forme du coeur*/
 a {
   list-style-type: none;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none; }
 
 i.far.fa-heart {
@@ -670,7 +671,8 @@ input#pseudo {
   border: none;
   text-align: center;
   background-color: #eaeaea;
-  width: 35%; }
+  width: 35%;
+  font-family: 'Roboto', sans-serif; }
 
 .photo-emballage h2 {
   margin-left: 20px; }
@@ -799,7 +801,6 @@ i.fas.fa-store {
 
 .nouveau p {
   background: #99E2D0;
-  font-family: none;
   border-radius: 2px;
   color: #088f6d;
   height: 20px;
