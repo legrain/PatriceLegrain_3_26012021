@@ -168,12 +168,12 @@ span.number{
 
 .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store{
 	@include xs{
-		    margin-left: -25px;
-    		margin-right: 12px;
+		margin-left: -25px;
+    	margin-right: 12px;
 	}
 	@include sm{
-		    margin-left: -25px;
-    margin-right: 12px;
+		margin-left: -25px;
+    	margin-right: 12px;
 	}
 	@include md {
     	margin: 0;
