@@ -347,27 +347,22 @@ i.fas.fa-heart {
 
 @media screen and (max-width: 599px) {
   span.number {
-    margin-right: 15vw;
-    line-height: 2; } }
+    margin-right: 15vw; } }
 @media screen and (min-width: 600px) and (max-width: 799px) {
   span.number {
-    margin-right: 25vw;
-    line-height: 2; } }
+    margin-right: 25vw; } }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   span.number {
     margin-right: 2vw;
-    padding-left: 10px;
-    line-height: 2; } }
+    padding-left: 10px; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   span.number {
     margin-right: 2vw;
-    padding-left: 10px;
-    line-height: 2; } }
+    padding-left: 10px; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   span.number {
     margin-right: 4vw;
-    padding-left: 10px;
-    line-height: 2; } }
+    padding-left: 10px; } }
 
 @media screen and (max-width: 599px) {
   .lili {
@@ -662,6 +657,7 @@ body {
 
 span.number {
   margin-left: -34px;
+  line-height: 2;
   padding-left: 10px;
   display: flex;
   background: #9356DC;

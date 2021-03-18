@@ -122,26 +122,26 @@ h2.titre-fonc-contenu{
 span.number{
 	@include xs{
 	margin-right: 15vw;
-	line-height: 2;
+	
 	}
 	@include sm{
 	margin-right: 25vw;
-	line-height: 2;
+	
 	}
 	@include md {
 	margin-right: 2vw;
     padding-left: 10px;
-	line-height: 2;
+	
 	}
   	@include lg {
     margin-right: 2vw;
     padding-left: 10px;
-	line-height: 2;
+	
   	}
   	@include xl {
     margin-right: 4vw;
     padding-left: 10px;
-	line-height: 2;	
+	
   	}
 }
 
@@ -583,6 +583,7 @@ body
 
 span.number{
 	margin-left: -34px;
+	line-height: 2;
 	padding-left: 10px;
 	display: flex;
 	background: $primaire;
