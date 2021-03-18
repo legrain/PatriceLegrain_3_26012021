@@ -426,7 +426,7 @@ h1{
   	}
 }
 
-.menu{
+.menu1, .menu2, .menu3{
 	@include xs{
 		margin: 10px;
 	}
@@ -488,23 +488,7 @@ h1{
 		font-size: 1.4em;
   	}
 }
-.menu2{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	
-  	}
-  	@include lg {
-    	
-  	}
-  	@include xl {
-    	margin-top: 23px;
-  	}
-}
+
 
 .menu-contenu{
 	@include xs{
@@ -631,7 +615,7 @@ img
 	object-fit: cover;
 }
 
-.menu2 h3{
+.invisible h3{
 	display: none;
 }
 
@@ -688,7 +672,11 @@ h3.gourmand-titre {
 		font-family: 'Roboto', sans-serif;
 		text-decoration: none;
 		color: white;
-		box-shadow: 1px 3px rgb(145, 141, 141);
+		box-shadow: 2px 5px 4px #c3c2c2;
+			&:hover{
+				background: linear-gradient(to bottom right,rgba(255, 121, 217, 0.7) ,rgba(146, 86, 220, 0.7));
+				box-shadow: 2px 5px 4px #807f7f;
+			}
 }
 
 .bouton a
@@ -699,8 +687,11 @@ h3.gourmand-titre {
 	text-decoration: none;
 	color: white;
 	box-shadow: 1px 3px #918d8d;
-	
 	font-family: 'Roboto', sans-serif;
+			&:hover{
+				background: linear-gradient(to bottom right,rgba(255, 121, 217, 0.7) ,rgba(146, 86, 220, 0.7));
+				box-shadow: 2px 5px 4px #807f7f;
+			}
 }
 
 .cont-page
@@ -762,7 +753,6 @@ article
 {
   align-self:flex-end;
   margin-right: 10px;
-  font-family: none;
   font-weight: bold;
 }
 
@@ -848,15 +838,6 @@ i.fas.fa-store {
 	width: 100%;
 	height: 350px;
 	object-fit: cover;
-}
-
-.menu
-{
-	background-color: white;
-	border-radius: 20px;
-	padding-left: 5px;
-	box-shadow: 2px 5px 5px 2px #d2c8c8;
-	margin-bottom: 10px;
 }
 
 img

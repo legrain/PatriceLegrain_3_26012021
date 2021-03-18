@@ -115,10 +115,17 @@ i.fas.fa-check
 
 /*La mise en place des barre de menu qui remonte*/
 
-.menu
+.menu1
 {
-	 
 	animation: remontexte 3s;
+}
+
+.menu2{
+	animation: 3s remontexte 1s;
+}
+
+.menu3{
+	animation: 3s remontexte 2s;
 }
 
 @keyframes remontexte{

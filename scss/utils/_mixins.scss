@@ -29,3 +29,25 @@
 	}
 }
 
+@mixin menu {
+	background-color: white;
+	border-radius: 20px;
+	padding-left: 5px;
+	box-shadow: 2px 5px 5px 2px #d2c8c8;
+	margin-bottom: 10px;
+}
+
+.gourmand, .gourmand2{
+	.menu1{
+		@include menu;
+	}
+
+	.menu2{
+		@include menu;
+	}
+
+	.menu3{
+		@include menu;
+	}
+}
+

@@ -121,6 +121,25 @@ footer {
   .liste li:hover .fa-mobile-alt, .liste li:hover .fa-store, .liste li:hover .fa-bars, .liste li:hover .fa-ellipsis-v {
     color: #9356DC; }
 
+.gourmand .menu1, .gourmand2 .menu1 {
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 5px;
+  box-shadow: 2px 5px 5px 2px #d2c8c8;
+  margin-bottom: 10px; }
+.gourmand .menu2, .gourmand2 .menu2 {
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 5px;
+  box-shadow: 2px 5px 5px 2px #d2c8c8;
+  margin-bottom: 10px; }
+.gourmand .menu3, .gourmand2 .menu3 {
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 5px;
+  box-shadow: 2px 5px 5px 2px #d2c8c8;
+  margin-bottom: 10px; }
+
 /*La mise en place de la barre avec le check qui tourne pour validé les menu*/
 article:hover .check {
   animation: visible 1s forwards; }
@@ -200,8 +219,14 @@ i.fas.fa-check {
 
 /*Fin de la mise en place du loader avec son fond*/
 /*La mise en place des barre de menu qui remonte*/
-.menu {
+.menu1 {
   animation: remontexte 3s; }
+
+.menu2 {
+  animation: 3s remontexte 1s; }
+
+.menu3 {
+  animation: 3s remontexte 2s; }
 
 @keyframes remontexte {
   from {
@@ -527,22 +552,22 @@ footer ul {
     display: inline-block; } }
 
 @media screen and (max-width: 599px) {
-  .menu {
+  .menu1, .menu2, .menu3 {
     margin: 10px; } }
 @media screen and (min-width: 600px) and (max-width: 799px) {
-  .menu {
+  .menu1, .menu2, .menu3 {
     margin: 25px; } }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
-  .menu {
+  .menu1, .menu2, .menu3 {
     width: 30vw;
     margin: 5px;
     font-size: 0.82em; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .menu {
+  .menu1, .menu2, .menu3 {
     width: 30vw;
     margin: 5px; } }
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .menu {
+  .menu1, .menu2, .menu3 {
     width: 30vw;
     margin: 5px;
     margin-left: 1vw; } }
@@ -569,10 +594,6 @@ footer ul {
   .gourmand-titre {
     margin-left: 40px;
     font-size: 1.4em; } }
-
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .menu2 {
-    margin-top: 23px; } }
 
 @media screen and (min-width: 1400px) and (max-width: 5000px) {
   .menu-contenu {
@@ -664,7 +685,7 @@ header {
 img {
   object-fit: cover; }
 
-.menu2 h3 {
+.invisible h3 {
   display: none; }
 
 input#pseudo {
@@ -710,7 +731,10 @@ h3.gourmand-titre {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: white;
-  box-shadow: 1px 3px #918d8d; }
+  box-shadow: 2px 5px 4px #c3c2c2; }
+  .button-explorer a:hover {
+    background: linear-gradient(to bottom right, rgba(255, 121, 217, 0.7), rgba(146, 86, 220, 0.7));
+    box-shadow: 2px 5px 4px #807f7f; }
 
 .bouton a {
   background: linear-gradient(to bottom right, #ff79da, #9356DC);
@@ -720,6 +744,9 @@ h3.gourmand-titre {
   color: white;
   box-shadow: 1px 3px #918d8d;
   font-family: 'Roboto', sans-serif; }
+  .bouton a:hover {
+    background: linear-gradient(to bottom right, rgba(255, 121, 217, 0.7), rgba(146, 86, 220, 0.7));
+    box-shadow: 2px 5px 4px #807f7f; }
 
 .cont-page {
   background-color: #ece9e9;
@@ -767,7 +794,6 @@ article {
 .price {
   align-self: flex-end;
   margin-right: 10px;
-  font-family: none;
   font-weight: bold; }
 
 span {
@@ -830,13 +856,6 @@ i.fas.fa-store {
   width: 100%;
   height: 350px;
   object-fit: cover; }
-
-.menu {
-  background-color: white;
-  border-radius: 20px;
-  padding-left: 5px;
-  box-shadow: 2px 5px 5px 2px #d2c8c8;
-  margin-bottom: 10px; }
 
 img {
   width: 100%; }
