@@ -451,8 +451,7 @@ i.fas.fa-arrow-left {
     font-size: 1.5em; } }
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   i.fas.fa-arrow-left {
-    font-size: 1.5em;
-    top: 2vw; } }
+    font-size: 1.5em; } }
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   i.fas.fa-arrow-left {
     font-size: 1.6em;
@@ -562,14 +561,10 @@ i.fas.fa-arrow-left {
   .logo-footer img {
     width: 20vw; } }
 
-@media screen and (max-width: 599px) {
-  .bouton a {
-    padding: 10px 40px;
-    line-height: 5; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .bouton a {
-    padding: 10px 40px;
-    line-height: 5; } }
+.bouton a {
+  padding: 10px 40px;
+  line-height: 5; }
+
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   .bouton a {
     padding: 20px 60px;

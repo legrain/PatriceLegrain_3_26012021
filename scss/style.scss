@@ -268,7 +268,7 @@ i.fas.fa-arrow-left{
 	}
 	@include md {
     	font-size: 1.5em;
-		top: 2vw;
+		
   	}
   	@include lg {
     	font-size: 1.6em;
@@ -415,14 +415,11 @@ h1{
 }
 
 .bouton a{
-	@include xs{
 		padding: 10px 40px;
 		line-height: 5;
-	}
-	@include sm{
-		padding: 10px 40px;
-		line-height: 5;
-	}
+}
+
+.bouton a{
 	@include md {
     	padding: 20px 60px;
 		line-height: 6;
