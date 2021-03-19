@@ -39,82 +39,67 @@
 h2.titre-fonc-contenu{
 	@include xs{
 		padding-left: 20px;
+		text-align: left!important;
 	}
 	@include sm{
 		padding-left: 30px;
 		font-size: 1.5em;
+		text-align: left!important;
 	}
-	@include md {
-    	text-align: center;
-  	}
-  	@include lg {
-    	text-align: center;
-  	}
-  	@include xl {
-    	text-align: center;
-  	}
-
+	
+ 
 }
 
 .liste .phone, .liste .bars, .liste .store{
 	@include xs{
 		margin-bottom: 20px;
 		width: 75vw;
+		
 	}
 	@include sm{
 		width: 80vw;
 		line-height: 1.2;
 		margin-left: 35px;
 		margin-bottom: 20px;
+		
 	}
 	@include md {
     	width: 25vw;
-		display: flex;
+		
   	}
   	@include lg {
     	width: 26vw;
-		display: flex;
+		
   	}
   	@include xl {
     	width: 28vw;
+	}
+}
+
+.liste-ul ul{
 		display: flex;
-  	}
 }
 
 .liste-ul ul{
 	@include xs{
-		
+		display: block
 	}
 	@include sm{
-		
+		display: block
 	}
-	@include md {
-    	display: flex;
-  	}
-  	@include lg {
-    	display: flex;
-  	}
-  	@include xl {
-    	display: flex;
-  	}
+	
 }
 
 .liste-ul i{
 	@include xs{
 		padding-right: 10px;
+		line-height: 1.5!important;
 	}
 	@include sm{
 		padding-right: 10px;
+		
 	}
-	@include md {
-    	line-height: 2;
-  	}
-  	@include lg {
-    	line-height: 2;
-  	}
-  	@include xl {
-    	line-height: 2;
-  	}
+	
 }
 
 
@@ -152,18 +137,11 @@ span.number{
 	@include sm{
 		font-size: 1.1em;
 	}
-	@include md {
-    	
-		
-  	}
-  	@include lg {
-    	
-		
-  	}
-  	@include xl {
-    	
-		
-  	}
+	
+}
+
+.fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store{
+		margin: 0
 }
 
 .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store{
@@ -175,30 +153,11 @@ span.number{
 		margin-left: -25px;
     	margin-right: 12px;
 	}
-	@include md {
-    	margin: 0;
-		
-  	}
-  	@include lg {
-    	margin: 0;
-		
-  	}
-  	@include xl {
-    	margin: 0;
-		
-  	}
+	
 }
 
 .fa-mobile-alt, .fa-bars, .fa-store{
-	@include xs{
-		    
-	}
-	@include sm{
-		    
-	}
-	@include md {
-    	
-  	}
+	
   	@include lg {
     	margin-right: 20px;
   	}
@@ -208,126 +167,74 @@ span.number{
 }
 
 i.fas.fa-mobile-alt{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	line-height: 1.5;
-		
-  	}
-  	@include lg {
-    	line-height: 1.5;
-		
-  	}
-  	@include xl {
-    	line-height: 1.5;
-		
-  	}
+	line-height: 1.5;
 }
-
-
+.resto{
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 2px 5px 5px 5px $gris-fonce;
+	padding-left: 0;
+	padding-bottom: 10px;
+	margin: 1vw;
+	width: 40vw
+}
 
 .resto{
 	@include xs{
 	margin: 5vw;
 	width: 90vw;
-	padding-bottom: 10px;
-	padding-left: 0;
 	}
 	@include sm{
 	margin: 5vw;
-	padding-bottom: 10px;
-	padding-left: 0;
 	width: 90vw;
 	}
-	@include md {
-	padding-bottom: 10px;
-	margin: 1vw;
-	padding-left: 0;
-	width: 40vw;
-  	}
-  	@include lg {
-	padding-bottom: 10px;
-	margin: 1vw;
-	padding-left: 0;
-	width: 40vw;
-  	}
-  	@include xl {
-	padding-bottom: 10px;
-	margin: 1vw;
-	padding-left: 0;
-	width: 40vw;
-  	}
+	
 }
 
+.photo-resto{
+	display: flex;
+}
 
 .photo-resto{
 	@include xs{
-		display: inline-block;
-		width: 100%
+		display: block;
+		
 	}
 	@include sm{
-		width: 100%
+		display: block;
 	}
-	@include md {
-    	display: flex;
-		
-  	}
-  	@include lg {
-    	display: flex;
-		
-  	}
-  	@include xl {
-    	display: flex;
-		
-  	}
+	
 }
 
 footer ul{
 	margin-bottom: 0;
+	display: flex;
 }
 
 footer ul {
 	@include xs{
-		
+		display: block;
 	}
-	@include sm{
-		display: flex;
-	}
-	@include md {
-    	display: flex;
-  	}
-  	@include lg {
-    	display: flex;
-  	}
-  	@include xl {
-    	display: flex;
-  	}
-    
+}
+
+footer li {
+    margin-right: 30px;
 }
 
 footer li{
-	@include xs{
-		
-	}
+	
 	@include sm{
 		margin-right: 15px;
 		font-size: 1.2em;
 	}
 	@include md {
-    	margin-right: 30px;
-		font-size: 1.2em;
+    	font-size: 1.2em;
   	}
   	@include lg {
-    	margin-right: 30px;
-		font-size: 1.5rem;
+    	font-size: 1.5rem;
   	}
   	@include xl {
-    	margin-right: 30px;
-		font-size: 1.9rem;
+    	font-size: 1.9rem;
   	}
 }
 
@@ -346,14 +253,18 @@ i.fas.fa-hands-helping {
 /*Fin du media query de la page index*/
 
 /*Media query des pages restaurant"*/
+i.fas.fa-arrow-left{
+	top: 2vw;
+}
 
 i.fas.fa-arrow-left{
 	@include xs{
 		font-size: 1.2em;
-		top: 2vw;
+		line-height: 1;
 	}
 	@include sm{
-		top: 2vw;
+		line-height: 1;
+    	font-size: 1.5em;
 	}
 	@include md {
     	font-size: 1.5em;
@@ -373,15 +284,7 @@ i.fas.fa-arrow-left{
 }
 
 h1{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	
-  	}
+	
   	@include lg {
     	font-size: 2em;
   	}
@@ -391,118 +294,85 @@ h1{
 }
 
 .gourmand{
+	display: flex;
+}
+
+.gourmand{
 	@include xs{
-		
+		display: block;
 	}
 	@include sm{
-		
+		display: block;
 	}
-	@include md {
-    	display: flex;
-  	}
-  	@include lg {
-    	display: flex;
-  	}
-  	@include xl {
-    	display: flex;
-  	}
+	
 }
 
 .gourmand2{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	display: inline-block;
-  	}
-  	@include lg {
-    	display: inline-block;
-  	}
-  	@include xl {
-    	display: inline-block;
-  	}
+	display: inline-block;
+}
+
+.menu1, .menu2, .menu3{
+		width: 30vw;
+		margin: 5px;
 }
 
 .menu1, .menu2, .menu3{
 	@include xs{
 		margin: 10px;
+		width: 90vw;
 	}
 	@include sm{
-		
+		width: 90vw;
 		margin: 25px;
 	}
 	@include md {
-    	width: 30vw;
-		margin: 5px;
+    	
 		font-size: 0.82em;
   	}
-  	@include lg {
-    	width: 30vw;
-		margin: 5px;
-  	}
+  	
   	@include xl {
-    	width: 30vw;
-		margin: 5px;
+    	
 		margin-left: 1vw;
   	}
 }
 
 .price{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	
-  	}
-  	@include lg {
-    	
-  	}
+	
   	@include xl {
     	font-size: 1.4em;
   	}
 }
 
+.gourmand-titre{
+	margin-left: 15px;
+	font-size: 1.4em;
+}
+
 .gourmand-titre {
 	@include xs{
-		margin-left: 15px;
+		font-size: 1em;
 	}
 	@include sm{
-		margin-left: 15px;
+		margin-left: 30px;
+		font-size: 1.1em;
 	}
-	@include md {
-    	margin-left: 15px;
-		font-size: 1.4em;
-  	}
-  	@include lg {
-    	margin-left: 30px;
-		font-size: 1.4em;
-  	}
+	
   	@include xl {
-    	margin-left: 40px;
-		font-size: 1.4em;
+    	margin-left: 20px;
   	}
 }
 
-
-.menu-contenu{
+.menu-contenu h3{
 	@include xs{
-		
+		font-size: 0.9em;
 	}
 	@include sm{
 		
 	}
-	@include md {
-    	
-  	}
-  	@include lg {
-    	
-  	}
+}
+
+.menu-contenu{
+	
   	@include xl {
     	font-size: 1.4em;
   	}
@@ -581,6 +451,12 @@ body
     padding-bottom: 20px;
 }
 
+.liste .phone, .liste .bars, .liste .store{
+		display: flex;
+		line-height: 2;
+}
+
+
 span.number{
 	margin-left: -34px;
 	line-height: 2;
@@ -604,6 +480,7 @@ span.number{
 
 .photo-resto{
 	position: relative;
+	width: 100%;
 }
 
 header
@@ -644,6 +521,8 @@ input#pseudo {
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 2px 5px 5px 5px $gris-fonce;
+	padding-left: 0;
+	padding-bottom: 10px;
 }
 
 h3.gourmand-titre {
@@ -711,6 +590,10 @@ h3.gourmand-titre {
 	text-align: center;
 }
 
+h2.titre-fonc-contenu{
+	 text-align: center;
+}
+
 .text {
 	background-color: $gris-claire;
 	text-align: center;
@@ -743,9 +626,9 @@ article
 {
 	margin-top: 0;
 	overflow:hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 0.9em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 0.8em;
 	font-family: 'Roboto', sans-serif;
 	position:initial ;
 }
@@ -845,6 +728,9 @@ img
 {
 	width: 100%;
 }
+
+
+
 
 
 
