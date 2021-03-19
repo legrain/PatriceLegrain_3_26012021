@@ -55,30 +55,17 @@ i.fas.fa-check
 /*Mise en place du loader avec son fond*/
 
 
-<<<<<<< HEAD
-
-
-@keyframes spin {
-				0% { 
-					transform: rotate(0deg);
-					top: 40%;
-=======
 @keyframes spin {
 				0% { 
 					transform: rotate(0deg);
 					left: 40%;
 					top: 50%;
->>>>>>> 40861c99a59c2a9f0f4bb6418f9b7a6116f81e8d
 					opacity: 1;
 				}
 				99% { 
 					transform: rotate(360deg);
-<<<<<<< HEAD
-					top: 40%;
-=======
 					left: 40%;
 					top: 50%;
->>>>>>> 40861c99a59c2a9f0f4bb6418f9b7a6116f81e8d
 					opacity: 1;
 				}
 				100%{
@@ -92,10 +79,6 @@ i.fas.fa-check
 	width:100vw;
 	animation: disparition 3s forwards;
 	display: flex;
-<<<<<<< HEAD
-    justify-content: center;
-=======
->>>>>>> 40861c99a59c2a9f0f4bb6418f9b7a6116f81e8d
 	opacity:0;
 			#loader {
 				width: 100px;
@@ -110,20 +93,12 @@ i.fas.fa-check
 				0%{
 					opacity:1;
 					background-color: white;
-<<<<<<< HEAD
-					height: 700vh;
-=======
 					height: 1000vh;
->>>>>>> 40861c99a59c2a9f0f4bb6418f9b7a6116f81e8d
 					}
 				99%{
 					opacity:1;
 					background-color: white;
-<<<<<<< HEAD
-					height: 700vh;
-=======
 					height: 1000vh;
->>>>>>> 40861c99a59c2a9f0f4bb6418f9b7a6116f81e8d
 					}
 				100%{
 					opacity:0;
