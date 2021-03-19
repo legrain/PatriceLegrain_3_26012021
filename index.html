@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/style.scss">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
     <title>OhMyFoodt</title>
@@ -12,6 +11,7 @@
 <body>
     <div class="enveloppe">
         <header>
+            <section class="haut de page">
             <div class="entete">
                 <div class="logo">
                     <div class="logo-emballage">
@@ -21,7 +21,7 @@
                 <div class="formulaire">
                     <div class="formulaire-emballage">
                         <div class="formulaire-form">
-                            <form method="post" action="page de recuperation des donné.php">
+                            <form method="post" >
                                 <label for="pseudo"><i class="fas fa-map-marker-alt"></i></label>
                                 <input type="text" name="pseudo" id="pseudo" maxlength="50" placeholder="Marseille,Paris...">
                             </form>
@@ -42,12 +42,13 @@
                     </div>
                 </div>
             </div>
+            </section>
         </header>
-    
+            <section class="liste">
             <div class="fonctionnement">
                 <div class="titre-fonc">
                     <div class="titre-fonc-emballage">
-                        <h1 class="titre-fonc-contenu">Fonctionnement</h1>
+                        <h2 class="titre-fonc-contenu">Fonctionnement</h2>
                     </div>
                 </div>
             </div>
@@ -62,6 +63,8 @@
                     </div>
                 </div>
             </div>
+            </section>
+            <section class="carte des restaurants">
             <div class="restaurant">
                 <div class="photo-emballage">
                     <h2>Restaurants</h2>
@@ -113,6 +116,7 @@
                     </div>
                 </div>
             </div>
+            </section>
         <footer>
                 <div class="logo-footer"><img src="image/logo/ohmyfood.png" alt="logo du site Oh my food"></div>
                 <div class="footer-ul">

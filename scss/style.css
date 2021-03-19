@@ -1,800 +1,92 @@
-@charset "UTF-8";
-/* media aliases and breakpoints*/
-/* media devices*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-h1, h2, .logo {
-  color: #000;
-  font-family: 'Shrikhand'; }
-
-h3 {
-  display: -webkit-inline-box;
-  font-size: 1.05em;
-  margin-bottom: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-h1 {
-  display: -webkit-inline-box;
-  font-size: 1.4em;
-  width: 80vw;
-  padding-left: 20px;
-  color: #101010; }
-
-h1.titre-fonc-contenu {
-  font-family: none;
-  font-size: 1.5em; }
-
-.button {
-  background-color: #f6f6f6;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  text-align: center; }
-
-.boutton-commander {
-  padding-bottom: 20px;
-  text-align: center; }
-
-.logo {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 100%; }
-
-.logo-emballage {
-  width: 90%; }
-
-.logo-image img {
-  width: 40%;
-  margin-top: 5px; }
-
-footer {
-  margin: 0;
-  width: 100vw;
-  background-color: #353535; }
-  footer li {
-    margin-bottom: 10px;
-    color: white;
-    list-style: none; }
-    footer li a {
-      color: white;
-      text-decoration: none; }
-  footer ul {
-    padding-bottom: 20px; }
-
-.logo-footer img {
-  filter: invert(6);
-  width: 40%;
-  padding-left: 40px;
-  padding-top: 20px;
-  margin-left: -20px; }
-
-.footer-ul {
-  margin-left: -20px; }
-
-.liste .phone {
-  padding: 18px;
-  display: -webkit-box;
-  background-color: #f6f6f6;
-  height: 30px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  margin-left: 29px;
-  font-weight: bold;
-  line-height: 2;
-  box-shadow: 2px 5px 4px #e7e7e7; }
-.liste .bars {
-  padding: 18px;
-  display: -webkit-box;
-  background-color: #f6f6f6;
-  height: 30px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  margin-left: 29px;
-  font-weight: bold;
-  line-height: 2;
-  box-shadow: 2px 5px 4px #e7e7e7; }
-.liste .store {
-  padding: 18px;
-  display: -webkit-box;
-  background-color: #f6f6f6;
-  height: 30px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  margin-left: 29px;
-  font-weight: bold;
-  line-height: 2;
-  box-shadow: 2px 5px 4px #e7e7e7; }
-.liste li:hover {
-  background-color: #f5edff;
-  box-shadow: 2px 5px 4px #807f7f; }
-  .liste li:hover .fa-mobile-alt, .liste li:hover .fa-store, .liste li:hover .fa-bars, .liste li:hover .fa-ellipsis-v {
-    color: #9356DC; }
-
-/*La mise en place de la barre avec le check qui tourne pour validé les menu*/
-article:hover .check {
-  animation: visible 1s forwards; }
-
-@keyframes visible {
-  from {
-    width: 0; }
-  to {
-    width: 100px; } }
-article:hover .fa-check {
-  transform: rotate(0turn); }
-
-.fa-check {
-  transform: rotate(1turn);
-  transition: transform 1s ease-in-out; }
-
-.check {
-  display: flex;
-  background-color: #99E2D0;
-  width: 0;
-  overflow: hidden;
-  margin: 0;
-  border-radius: 0 20px 20px 0; }
-
-i.fas.fa-check {
-  border-radius: 50%;
-  padding: 5px;
-  background-color: white;
-  color: #99E2D0; }
-
-.check span {
-  align-self: center;
-  margin-left: 30%; }
-
-/*Fin de la mise en place de la barre avec le check qui tourne pour validé les menu*/
-/*Mise en place du loader avec son fond*/
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    top: 40%;
-    opacity: 1; }
-  99% {
-    transform: rotate(360deg);
-    top: 40%;
-    opacity: 1; }
-  100% {
-    left: 9999px;
-    opacity: 0; } }
-.index {
-  width: 100vw;
-  animation: disparition 3s forwards;
-  display: flex;
-  justify-content: center;
-  opacity: 0; }
-  .index #loader {
-    width: 100px;
-    height: 100px;
-    border: 20px solid #CCCCCC;
-    border-top: 20px solid #1177FF;
-    border-radius: 50%;
-    animation: spin 3s ease-in-out forwards;
-    position: fixed; }
-@keyframes disparition {
-  0% {
-    opacity: 1;
-    background-color: white;
-    height: 700vh; }
-  99% {
-    opacity: 1;
-    background-color: white;
-    height: 700vh; }
-  100% {
-    opacity: 0; } }
-.enveloppe {
-  position: absolute; }
-
-/*Fin de la mise en place du loader avec son fond*/
-/*La mise en place des barre de menu qui remonte*/
-.menu {
-  animation: remontexte 3s; }
-
-@keyframes remontexte {
-  from {
-    transform: translateY(40px);
-    opacity: 0; }
-  to {
-    transform: translateY(0);
-    opacity: 2; } }
-/*Fin de la mise en place des barre de menu qui remonte*/
-/*Mise en forme du coeur*/
-a {
-  list-style-type: none;
-  text-decoration: none; }
-
-i.far.fa-heart {
-  font-size: 1.4em;
-  position: absolute;
-  margin-top: 20px; }
-
-i.fas.fa-heart {
-  opacity: 0;
-  font-size: 1.4em;
-  position: absolute;
-  margin-top: 20px; }
-  i.fas.fa-heart:hover {
-    transform-origin: bottom right;
-    opacity: 1;
-    z-index: 1000;
-    background: linear-gradient(to left, #9356DC, #ff79da);
-    background: -webkit-linear-gradient(to left, #9356DC, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 1s ease-in-out; }
-
-/*Fin de la mise en forme du coeur*/
-/*Media query de la page index*/
-@media screen and (max-width: 599px) {
-  h2.titre-fonc-contenu {
-    padding-left: 10px; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  h2.titre-fonc-contenu {
-    text-align: center;
-    font-size: 1.9em; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  h2.titre-fonc-contenu {
-    text-align: center; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  h2.titre-fonc-contenu {
-    text-align: center; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  h2.titre-fonc-contenu {
-    text-align: center; } }
-
-@media screen and (max-width: 599px) {
-  .liste .phone, .liste .bars, .liste .store {
-    margin-bottom: 20px;
-    width: 75vw; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .liste .phone, .liste .bars, .liste .store {
-    width: 80vw;
-    line-height: 1.2;
-    margin-left: 35px;
-    margin-bottom: 20px; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .liste .phone, .liste .bars, .liste .store {
-    width: 25vw;
-    display: flex; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .liste .phone, .liste .bars, .liste .store {
-    width: 26vw;
-    display: flex; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .liste .phone, .liste .bars, .liste .store {
-    width: 28vw;
-    display: flex; } }
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .liste-ul ul {
-    display: flex; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .liste-ul ul {
-    display: flex; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .liste-ul ul {
-    display: flex; } }
-
-@media screen and (max-width: 599px) {
-  .liste-ul i {
-    padding-right: 10px; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .liste-ul i {
-    padding-right: 10px; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .liste-ul i {
-    line-height: 2; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .liste-ul i {
-    line-height: 2; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .liste-ul i {
-    line-height: 2; } }
-
-@media screen and (max-width: 599px) {
-  span.number {
-    margin-right: 15vw;
-    line-height: 2; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  span.number {
-    margin-right: 25vw;
-    line-height: 2; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  span.number {
-    margin-right: 2vw;
-    padding-left: 10px;
-    line-height: 2; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  span.number {
-    margin-right: 2vw;
-    padding-left: 10px;
-    line-height: 2; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  span.number {
-    margin-right: 4vw;
-    padding-left: 10px;
-    line-height: 2; } }
-
-@media screen and (max-width: 599px) {
-  .lili {
-    font-size: 1.1em; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .lili {
-    font-size: 1.1em; } }
-
-@media screen and (max-width: 599px) {
-  .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store {
-    margin-left: -25px;
-    margin-right: 12px; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store {
-    margin-left: -25px;
-    margin-right: 12px; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store {
-    margin: 0; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store {
-    margin: 0; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store {
-    margin: 0; } }
-
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .fa-mobile-alt, .fa-bars, .fa-store {
-    margin-right: 20px; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .fa-mobile-alt, .fa-bars, .fa-store {
-    margin-right: 20px; } }
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  i.fas.fa-mobile-alt {
-    line-height: 1.5; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  i.fas.fa-mobile-alt {
-    line-height: 1.5; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  i.fas.fa-mobile-alt {
-    line-height: 1.5; } }
-
-@media screen and (max-width: 599px) {
-  .resto {
-    margin: 5vw;
-    width: 90vw;
-    padding-bottom: 10px;
-    padding-left: 0; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .resto {
-    margin: 5vw;
-    padding-bottom: 10px;
-    padding-left: 0;
-    width: 90vw; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .resto {
-    padding-bottom: 10px;
-    margin: 1vw;
-    padding-left: 0;
-    width: 40vw; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .resto {
-    padding-bottom: 10px;
-    margin: 1vw;
-    padding-left: 0;
-    width: 40vw; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .resto {
-    padding-bottom: 10px;
-    margin: 1vw;
-    padding-left: 0;
-    width: 40vw; } }
-
-@media screen and (max-width: 599px) {
-  .photo-resto {
-    display: inline-block;
-    width: 100%; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .photo-resto {
-    width: 100%; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .photo-resto {
-    display: flex; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .photo-resto {
-    display: flex; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .photo-resto {
-    display: flex; } }
-
-footer ul {
-  margin-bottom: 0; }
-
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  footer ul {
-    display: flex; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  footer ul {
-    display: flex; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  footer ul {
-    display: flex; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  footer ul {
-    display: flex; } }
-
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  footer li {
-    margin-right: 15px;
-    font-size: 1.2em; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  footer li {
-    margin-right: 30px;
-    font-size: 1.2em; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  footer li {
-    margin-right: 30px;
-    font-size: 1.5rem; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  footer li {
-    margin-right: 30px;
-    font-size: 1.9rem; } }
-
-@media screen and (max-width: 599px) {
-  i.fas.fa-utensils {
-    margin-right: 17px; } }
-
-@media screen and (max-width: 599px) {
-  i.fas.fa-hands-helping {
-    margin-right: 10px; } }
-
-/*Fin du media query de la page index*/
-/*Media query des pages restaurant"*/
-@media screen and (max-width: 599px) {
-  i.fas.fa-arrow-left {
-    font-size: 1.2em;
-    top: 2vw; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  i.fas.fa-arrow-left {
-    top: 2vw; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  i.fas.fa-arrow-left {
-    font-size: 1.5em;
-    top: 2vw; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  i.fas.fa-arrow-left {
-    font-size: 2em;
-    top: 1.5vw; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  i.fas.fa-arrow-left {
-    font-size: 2em;
-    top: 1.5vw; } }
-
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  h1 {
-    font-size: 2em; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  h1 {
-    font-size: 2em; } }
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .gourmand {
-    display: flex; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .gourmand {
-    display: flex; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .gourmand {
-    display: flex; } }
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .gourmand2 {
-    display: inline-block; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .gourmand2 {
-    display: inline-block; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .gourmand2 {
-    display: inline-block; } }
-
-@media screen and (max-width: 599px) {
-  .menu {
-    margin: 10px; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .menu {
-    margin: 5px; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .menu {
-    width: 30vw;
-    margin: 5px;
-    font-size: 0.82em; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .menu {
-    width: 30vw;
-    margin: 5px; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .menu {
-    width: 30vw;
-    margin: 5px;
-    margin-left: 1vw; } }
-
-@media screen and (max-width: 599px) {
-  .gourmand-titre {
-    margin-left: 15px; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .gourmand-titre {
-    margin-left: 15px; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .gourmand-titre {
-    margin-left: 15px; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .gourmand-titre {
-    margin-left: 30px; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .gourmand-titre {
-    margin-left: 40px; } }
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .menu2 {
-    margin-top: 23px; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .menu2 {
-    margin-top: 23px; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .menu2 {
-    margin-top: 30px; } }
-
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .menu-contenu {
-    font-size: 1.4em; } }
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  h3.gourmand-titre {
-    font-size: 1.4em; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  h3.gourmand-titre {
-    font-size: 1.4em; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  h3.gourmand-titre {
-    font-size: 1.4em; } }
-
-@media screen and (max-width: 599px) {
-  .logo-image img {
-    width: 40vw; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .logo-image img {
-    width: 30vw; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .logo-image img {
-    width: 25vw; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .logo-image img {
-    width: 20vw; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .logo-image img {
-    width: 20vw; } }
-
-@media screen and (max-width: 599px) {
-  .logo-footer img {
-    width: 40vw; } }
-@media screen and (min-width: 600px) and (max-width: 799px) {
-  .logo-footer img {
-    width: 30vw; } }
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  .logo-footer img {
-    width: 25vw; } }
-@media screen and (min-width: 1024px) and (max-width: 1399px) {
-  .logo-footer img {
-    width: 20vw; } }
-@media screen and (min-width: 1400px) and (max-width: 5000px) {
-  .logo-footer img {
-    width: 20vw; } }
-
-/*Fin du media query des pages des restaurants*/
-.menu2 {
-  margin-top: 20px; }
-
-body {
-  margin: 0; }
-
-.text-emballage {
-  padding-bottom: 20px; }
-
-span.number {
-  margin-left: -34px;
-  padding-left: 10px;
-  display: flex;
-  background: #9356DC;
-  border-radius: 50%;
-  color: white;
-  width: 20px; }
-
-.fa-mobile-alt, .fa-ellipsis-v, .fa-bars, .fa-store {
-  color: #918d8d; }
-
-.photo-resto p {
-  margin: 0;
-  color: black; }
-
-.photo-resto {
-  position: relative; }
-
-header {
-  width: 100vw; }
-
-img {
-  object-fit: cover; }
-
-input#pseudo {
-  border: none;
-  text-align: center;
-  background-color: #eaeaea; }
-
-.photo-emballage h2 {
-  margin-left: 20px; }
-
-.contenu-resto h3 {
-  width: 85%;
-  color: black; }
-
-.resto {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 2px 5px 5px 5px #eaeaea; }
-
-h3.gourmand-titre {
-  position: relative;
-  padding-bottom: 5px;
-  margin-bottom: 10px; }
-
-h3.gourmand-titre:after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  bottom: 0;
-  right: 50%;
-  border-bottom: 2px solid #99E2D0; }
-
-.button-explorer a {
-  background: linear-gradient(to bottom right, #ff79da, #9356DC);
-  padding: 10px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-  box-shadow: 1px 3px #918d8d; }
-
-.bouton a {
-  background: linear-gradient(to bottom right, #ff79da, #9356DC);
-  justify-content: center;
-  padding: 10px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-  box-shadow: 1px 3px #918d8d;
-  line-height: 5; }
-
-.cont-page {
-  background-color: #ece9e9;
-  margin-top: -40px;
-  border-radius: 30px 30px 0 0;
-  padding-top: 20px;
-  position: relative; }
-
-.formulaire {
-  background-color: #eaeaea;
-  border-top: 2px solid #d3d3d3;
-  padding: 15px 0 15px 0;
-  text-align: center; }
-
-.text {
-  background-color: #f6f6f6;
-  text-align: center; }
-  .text h2 {
-    margin: 0;
-    text-align: center; }
-  .text p {
-    margin-bottom: 0; }
-
-.menu-contenu {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-article {
-  display: flex;
-  justify-content: space-between; }
-
-.piment {
-  margin-top: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 0.9em;
-  font-family: 'Roboto', sans-serif;
-  position: initial;
-  font-weight: bold;
-  color: black; }
-
-.price {
-  align-self: flex-end;
-  margin-right: 10px;
-  font-family: none; }
-
-span {
-  margin-left: 5px; }
-
-.liste-ul ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: center; }
-
-i.fas.fa-ellipsis-v {
-  font-size: 1em; }
-
-i.fas.fa-mobile-alt {
-  font-size: 1.3em; }
-
-i.fas.fa-store {
-  font-size: 1em; }
-
-.restaurant {
-  background-color: #f6f6f6;
-  padding-bottom: 10px;
-  width: 100vw; }
-
-.contenu-resto {
-  padding-left: 10px; }
-
-.photo-resto img {
-  border-radius: 15px 15px 0 0;
-  height: 200px; }
-
-.nouveau p {
-  background: #99E2D0;
-  font-family: none;
-  color: #088f6d;
-  height: 20px;
-  padding: 5px;
-  position: absolute;
-  top: 10%;
-  right: 2%;
-  line-height: 1.2; }
-
-.photo-emballage {
-  padding-top: 20px;
-  padding-bottom: 30px; }
-
-.fa-arrow-left {
-  width: 10%;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-  position: absolute;
-  top: 3%;
-  left: 2%;
-  line-height: 2;
-  color: black; }
-
-.photo-gout img {
-  width: 100%; }
-
-.photo-gout img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover; }
-
-.menu {
-  background-color: white;
-  border-radius: 20px;
-  padding-left: 5px;
-  box-shadow: 2px 5px 5px 2px #d2c8c8;
-  margin-bottom: 10px; }
-
-img {
-  width: 100%; }
-
-/*# sourceMappingURL=style.css.map */
+/*
+Error: Invalid CSS after "					opacity: 1": expected "{", was ";"
+        on line 72 of scss/utils/_fonctions.scss
+        from line 14 of scss/style.scss
+
+67: 				0% { 
+68: 					transform: rotate(0deg);
+69: 					left: 40%;
+70: 					top: 50%;
+71: >>>>>>> 40861c99a59c2a9f0f4bb6418f9b7a6116f81e8d
+72: 					opacity: 1;
+73: 				}
+74: 				99% { 
+75: 					transform: rotate(360deg);
+76: <<<<<<< HEAD
+77: 					top: 40%;
+
+Backtrace:
+scss/utils/_fonctions.scss:72
+scss/style.scss:14
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"					opacity: 1\": expected \"{\", was \";\"\A         on line 72 of scss/utils/_fonctions.scss\A         from line 14 of scss/style.scss\A \A 67: 				0% { \A 68: 					transform: rotate(0deg);\A 69: 					left: 40%;\A 70: 					top: 50%;\A 71: >>>>>>> 40861c99a59c2a9f0f4bb6418f9b7a6116f81e8d\A 72: 					opacity: 1;\A 73: 				}\A 74: 				99% { \A 75: 					transform: rotate(360deg);\A 76: <<<<<<< HEAD\A 77: 					top: 40%;"; }

@@ -15,85 +15,91 @@
 
 /*Media query de la page index*/
 
+@include xs{
+		@keyframes spin {
+				0% { 
+					transform: rotate(0deg);
+					left: 30%;
+					top: 40%;
+					opacity: 1;
+				}
+				99% { 
+					transform: rotate(360deg);
+					left: 30%;
+					top: 40%;
+					opacity: 1;
+				}
+				100%{
+					left: 9999px;
+					opacity: 0;
+				}
+	}
+}
+
 h2.titre-fonc-contenu{
 	@include xs{
-		padding-left: 10px;
+		padding-left: 20px;
+		text-align: left!important;
 	}
 	@include sm{
-		text-align: center;
-		font-size: 1.9em;
+		padding-left: 30px;
+		font-size: 1.5em;
+		text-align: left!important;
 	}
-	@include md {
-    	text-align: center;
-  	}
-  	@include lg {
-    	text-align: center;
-  	}
-  	@include xl {
-    	text-align: center;
-  	}
-
+	
+ 
 }
 
 .liste .phone, .liste .bars, .liste .store{
 	@include xs{
 		margin-bottom: 20px;
 		width: 75vw;
+		
 	}
 	@include sm{
 		width: 80vw;
 		line-height: 1.2;
 		margin-left: 35px;
 		margin-bottom: 20px;
+		
 	}
 	@include md {
     	width: 25vw;
-		display: flex;
+		
   	}
   	@include lg {
     	width: 26vw;
-		display: flex;
+		
   	}
   	@include xl {
     	width: 28vw;
+	}
+}
+
+.liste-ul ul{
 		display: flex;
-  	}
 }
 
 .liste-ul ul{
 	@include xs{
-		
+		display: block
 	}
 	@include sm{
-		
+		display: block
 	}
-	@include md {
-    	display: flex;
-  	}
-  	@include lg {
-    	display: flex;
-  	}
-  	@include xl {
-    	display: flex;
-  	}
+	
 }
 
 .liste-ul i{
 	@include xs{
 		padding-right: 10px;
+		line-height: 1.5!important;
 	}
 	@include sm{
 		padding-right: 10px;
+		
 	}
-	@include md {
-    	line-height: 2;
-  	}
-  	@include lg {
-    	line-height: 2;
-  	}
-  	@include xl {
-    	line-height: 2;
-  	}
+	
 }
 
 
@@ -101,83 +107,57 @@ h2.titre-fonc-contenu{
 span.number{
 	@include xs{
 	margin-right: 15vw;
-	line-height: 2;
+	
 	}
 	@include sm{
 	margin-right: 25vw;
-	line-height: 2;
+	
 	}
 	@include md {
 	margin-right: 2vw;
     padding-left: 10px;
-	line-height: 2;
+	
 	}
   	@include lg {
     margin-right: 2vw;
     padding-left: 10px;
-	line-height: 2;
+	
   	}
   	@include xl {
     margin-right: 4vw;
     padding-left: 10px;
-	line-height: 2;	
+	
   	}
 }
 
 .lili{
 	@include xs{
-		font-size: 1.1em;
+		font-size: 0.95em;
 	}
 	@include sm{
 		font-size: 1.1em;
 	}
-	@include md {
-    	
-		
-  	}
-  	@include lg {
-    	
-		
-  	}
-  	@include xl {
-    	
-		
-  	}
+	
+}
+
+.fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store{
+		margin: 0
 }
 
 .fa-mobile-alt, .fa-bars, .fa-ellipsis-v, .fa-store{
 	@include xs{
-		    margin-left: -25px;
-    		margin-right: 12px;
+		margin-left: -25px;
+    	margin-right: 12px;
 	}
 	@include sm{
-		    margin-left: -25px;
-    margin-right: 12px;
+		margin-left: -25px;
+    	margin-right: 12px;
 	}
-	@include md {
-    	margin: 0;
-		
-  	}
-  	@include lg {
-    	margin: 0;
-		
-  	}
-  	@include xl {
-    	margin: 0;
-		
-  	}
+	
 }
 
 .fa-mobile-alt, .fa-bars, .fa-store{
-	@include xs{
-		    
-	}
-	@include sm{
-		    
-	}
-	@include md {
-    	
-  	}
+	
   	@include lg {
     	margin-right: 20px;
   	}
@@ -187,126 +167,74 @@ span.number{
 }
 
 i.fas.fa-mobile-alt{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	line-height: 1.5;
-		
-  	}
-  	@include lg {
-    	line-height: 1.5;
-		
-  	}
-  	@include xl {
-    	line-height: 1.5;
-		
-  	}
+	line-height: 1.5;
 }
-
-
+.resto{
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 2px 5px 5px 5px $gris-fonce;
+	padding-left: 0;
+	padding-bottom: 10px;
+	margin: 1vw;
+	width: 40vw
+}
 
 .resto{
 	@include xs{
 	margin: 5vw;
 	width: 90vw;
-	padding-bottom: 10px;
-	padding-left: 0;
 	}
 	@include sm{
 	margin: 5vw;
-	padding-bottom: 10px;
-	padding-left: 0;
 	width: 90vw;
 	}
-	@include md {
-	padding-bottom: 10px;
-	margin: 1vw;
-	padding-left: 0;
-	width: 40vw;
-  	}
-  	@include lg {
-	padding-bottom: 10px;
-	margin: 1vw;
-	padding-left: 0;
-	width: 40vw;
-  	}
-  	@include xl {
-	padding-bottom: 10px;
-	margin: 1vw;
-	padding-left: 0;
-	width: 40vw;
-  	}
+	
 }
 
+.photo-resto{
+	display: flex;
+}
 
 .photo-resto{
 	@include xs{
-		display: inline-block;
-		width: 100%
+		display: block;
+		
 	}
 	@include sm{
-		width: 100%
+		display: block;
 	}
-	@include md {
-    	display: flex;
-		
-  	}
-  	@include lg {
-    	display: flex;
-		
-  	}
-  	@include xl {
-    	display: flex;
-		
-  	}
+	
 }
 
 footer ul{
 	margin-bottom: 0;
+	display: flex;
 }
 
 footer ul {
 	@include xs{
-		
+		display: block;
 	}
-	@include sm{
-		display: flex;
-	}
-	@include md {
-    	display: flex;
-  	}
-  	@include lg {
-    	display: flex;
-  	}
-  	@include xl {
-    	display: flex;
-  	}
-    
+}
+
+footer li {
+    margin-right: 30px;
 }
 
 footer li{
-	@include xs{
-		
-	}
+	
 	@include sm{
 		margin-right: 15px;
 		font-size: 1.2em;
 	}
 	@include md {
-    	margin-right: 30px;
-		font-size: 1.2em;
+    	font-size: 1.2em;
   	}
   	@include lg {
-    	margin-right: 30px;
-		font-size: 1.5rem;
+    	font-size: 1.5rem;
   	}
   	@include xl {
-    	margin-right: 30px;
-		font-size: 1.9rem;
+    	font-size: 1.9rem;
   	}
 }
 
@@ -325,40 +253,38 @@ i.fas.fa-hands-helping {
 /*Fin du media query de la page index*/
 
 /*Media query des pages restaurant"*/
+i.fas.fa-arrow-left{
+	top: 2vw;
+}
 
 i.fas.fa-arrow-left{
 	@include xs{
 		font-size: 1.2em;
-		top: 2vw;
+		line-height: 1;
 	}
 	@include sm{
-		top: 2vw;
+		line-height: 1;
+    	font-size: 1.5em;
 	}
 	@include md {
     	font-size: 1.5em;
 		top: 2vw;
   	}
   	@include lg {
-    	font-size: 2em;
+    	font-size: 1.6em;
 		top: 1.5vw;
+		line-height: 0.5;
   	}
   	@include xl {
-    	font-size: 2em;
+    	font-size: 2rem;
 		top: 1.5vw;
+		line-height: 0.5;
   	}
 	
 }
 
 h1{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	
-  	}
+	
   	@include lg {
     	font-size: 2em;
   	}
@@ -368,131 +294,85 @@ h1{
 }
 
 .gourmand{
+	display: flex;
+}
+
+.gourmand{
 	@include xs{
-		
+		display: block;
 	}
 	@include sm{
-		
+		display: block;
 	}
-	@include md {
-    	display: flex;
-  	}
-  	@include lg {
-    	display: flex;
-  	}
-  	@include xl {
-    	display: flex;
-  	}
+	
 }
 
 .gourmand2{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	display: inline-block;
-  	}
-  	@include lg {
-    	display: inline-block;
-  	}
-  	@include xl {
-    	display: inline-block;
-  	}
+	display: inline-block;
 }
 
-.menu{
+.menu1, .menu2, .menu3{
+		width: 30vw;
+		margin: 5px;
+}
+
+.menu1, .menu2, .menu3{
 	@include xs{
 		margin: 10px;
+		width: 90vw;
 	}
 	@include sm{
-		
-		margin: 5px;
+		width: 90vw;
+		margin: 25px;
 	}
 	@include md {
-    	width: 30vw;
-		margin: 5px;
+    	
 		font-size: 0.82em;
   	}
-  	@include lg {
-    	width: 30vw;
-		margin: 5px;
-  	}
+  	
   	@include xl {
-    	width: 30vw;
-		margin: 5px;
+    	
 		margin-left: 1vw;
   	}
 }
 
-.gourmand-titre {
-	@include xs{
-		margin-left: 15px;
-	}
-	@include sm{
-		margin-left: 15px;
-	}
-	@include md {
-    	margin-left: 15px;
-  	}
-  	@include lg {
-    	margin-left: 30px;
-  	}
+.price{
+	
   	@include xl {
-    	margin-left: 40px;
+    	font-size: 1.4em;
   	}
 }
-.menu2{
+
+.gourmand-titre{
+	margin-left: 15px;
+	font-size: 1.4em;
+}
+
+.gourmand-titre {
 	@include xs{
-		
+		font-size: 1em;
+	}
+	@include sm{
+		margin-left: 30px;
+		font-size: 1.1em;
+	}
+	
+  	@include xl {
+    	margin-left: 20px;
+  	}
+}
+
+.menu-contenu h3{
+	@include xs{
+		font-size: 0.9em;
 	}
 	@include sm{
 		
 	}
-	@include md {
-    	margin-top: 23px;
-  	}
-  	@include lg {
-    	margin-top: 23px;
-  	}
-  	@include xl {
-    	margin-top: 30px;
-  	}
 }
 
 .menu-contenu{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	
-  	}
-  	@include lg {
-    	
-  	}
-  	@include xl {
-    	font-size: 1.4em;
-  	}
-}
-
-h3.gourmand-titre{
-	@include xs{
-		
-	}
-	@include sm{
-		
-	}
-	@include md {
-    	font-size: 1.4em;
-  	}
-  	@include lg {
-    	font-size: 1.4em;
-  	}
+	
   	@include xl {
     	font-size: 1.4em;
   	}
@@ -534,11 +414,68 @@ h3.gourmand-titre{
 	}
 }
 
+.bouton a{
+	@include xs{
+		padding: 10px 40px;
+		line-height: 5;
+	}
+	@include sm{
+		padding: 10px 40px;
+		line-height: 5;
+	}
+	@include md {
+    	padding: 20px 60px;
+		line-height: 6;
+	}
+  	@include lg {
+    	padding: 20px 60px;
+		line-height: 8;
+	}
+  	@include xl {
+    	padding: 30px 80px;
+		line-height: 10;
+		font-size: 1.4em;
+	}
+}
+
+.logo-image img {
+	@include xs{
+		width: 40vw;
+	}
+	@include sm{
+		width: 30vw;
+	}
+	@include md {
+    	width: 25vw;
+	}
+  	@include lg {
+    	width: 20vw;
+	}
+  	@include xl {
+    	width: 20vw;
+	}
+}
+
+.logo-footer img {
+	@include xs{
+		width: 40vw;
+	}
+	@include sm{
+		width: 30vw;
+	}
+	@include md {
+    	width: 25vw;
+	}
+  	@include lg {
+    	width: 20vw;
+	}
+  	@include xl {
+    	width: 20vw;
+	}
+}
+
 /*Fin du media query des pages des restaurants*/
 
-.menu2{
-	margin-top: 20px;
-}
 
 body
 {
@@ -550,8 +487,15 @@ body
     padding-bottom: 20px;
 }
 
+.liste .phone, .liste .bars, .liste .store{
+		display: flex;
+		line-height: 2;
+}
+
+
 span.number{
 	margin-left: -34px;
+	line-height: 2;
 	padding-left: 10px;
 	display: flex;
 	background: $primaire;
@@ -572,6 +516,7 @@ span.number{
 
 .photo-resto{
 	position: relative;
+	width: 100%;
 }
 
 header
@@ -584,13 +529,17 @@ img
 	object-fit: cover;
 }
 
-
+.invisible h3{
+	display: none;
+}
 
 
 input#pseudo {
     border: none;
     text-align: center;
     background-color: #eaeaea;
+	width: 35%;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -608,6 +557,8 @@ input#pseudo {
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 2px 5px 5px 5px $gris-fonce;
+	padding-left: 0;
+	padding-bottom: 10px;
 }
 
 h3.gourmand-titre {
@@ -616,7 +567,11 @@ h3.gourmand-titre {
 		margin-bottom: 10px;
 }
 
-h3.gourmand-titre:after{
+.lili{
+	font-family: 'Roboto', sans-serif;
+}
+
+.gourmand-titre:after{
 	    content: "";
     position: absolute;
     width: 50%;
@@ -630,22 +585,29 @@ h3.gourmand-titre:after{
 		background: linear-gradient(to bottom right,$secondaire ,$primaire);
 		padding: 10px;
 		border-radius: 30px;
+		font-family: 'Roboto', sans-serif;
 		text-decoration: none;
 		color: white;
-		box-shadow: 1px 3px rgb(145, 141, 141);
+		box-shadow: 2px 5px 4px #c3c2c2;
+			&:hover{
+				background: linear-gradient(to bottom right,rgba(255, 121, 217, 0.7) ,rgba(146, 86, 220, 0.7));
+				box-shadow: 2px 5px 4px #807f7f;
+			}
 }
 
 .bouton a
 {
 	background: linear-gradient(to bottom right,$secondaire,$primaire);
 	justify-content: center;
-	padding: 10px;
 	border-radius: 30px;
 	text-decoration: none;
 	color: white;
 	box-shadow: 1px 3px #918d8d;
-	line-height: 5;
-	
+	font-family: 'Roboto', sans-serif;
+			&:hover{
+				background: linear-gradient(to bottom right,rgba(255, 121, 217, 0.7) ,rgba(146, 86, 220, 0.7));
+				box-shadow: 2px 5px 4px #807f7f;
+			}
 }
 
 .cont-page
@@ -664,12 +626,18 @@ h3.gourmand-titre:after{
 	text-align: center;
 }
 
+h2.titre-fonc-contenu{
+	 text-align: center;
+}
+
 .text {
 	background-color: $gris-claire;
 	text-align: center;
 	h2 {
-		margin: 0;
 		text-align: center;
+		width: 80%;
+		padding-top: 30px;
+		margin: 0 10vw;
 	}
 	p {
 		margin-bottom: 0;
@@ -694,20 +662,18 @@ article
 {
 	margin-top: 0;
 	overflow:hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 0.9em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 0.8em;
 	font-family: 'Roboto', sans-serif;
 	position:initial ;
-	font-weight: bold;
-	color: black;
 }
 
 .price
 {
   align-self:flex-end;
   margin-right: 10px;
-  font-family: none;
+  font-weight: bold;
 }
 
 span
@@ -758,7 +724,7 @@ i.fas.fa-store {
 
 .nouveau p {
 		background: $tertiaire;
-		font-family: none;
+		border-radius: 2px;
 		color: #088f6d;
 		height: 20px;
 		padding: 5px;
@@ -787,12 +753,6 @@ i.fas.fa-store {
     color: black;
 }
 
-.photo-gout {
-	img {
-		width: 100%;
-	}
-}
-
 .photo-gout img 
 {
 	width: 100%;
@@ -800,19 +760,13 @@ i.fas.fa-store {
 	object-fit: cover;
 }
 
-.menu
-{
-	background-color: white;
-	border-radius: 20px;
-	padding-left: 5px;
-	box-shadow: 2px 5px 5px 2px #d2c8c8;
-	margin-bottom: 10px;
-}
-
 img
 {
 	width: 100%;
 }
+
+
+
 
 
 
